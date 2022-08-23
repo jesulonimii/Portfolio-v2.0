@@ -3,6 +3,6 @@
 
 <template>
   <main>
-  <div>Hello Home</div>
+  <div>My Projects</div>
   </main>
 </template>

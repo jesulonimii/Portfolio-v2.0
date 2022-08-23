@@ -1,22 +1,18 @@
+<template>
+  <div class="w-full flex flex-col justify-between">
+    <Header title="Jesulonimii" imageLink="http://jesulonimii.herokuapp.com/images/jesulonimii.jpg"/>
+    <main class="h-[80vh]">
+      <RouterView />
+    </main>
+  </div>
+
+</template>
+
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import './assets/css/tailwind.css'
+
 </script>
-
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/" class="bg-red-500">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
-</template>
 
