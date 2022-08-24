@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col justify-between">
-    <Header title="Jèsúlonimii™" imageLink="http://jesulonimii.herokuapp.com/images/jesulonimii.jpg"/>
+    <Header title="Jèsúlonimii™" imageLink="../src/assets/me.jpg"/>
     <main>
       <RouterView />
     </main>

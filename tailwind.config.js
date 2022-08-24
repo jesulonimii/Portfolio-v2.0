@@ -10,7 +10,6 @@ module.exports = {
       'ubuntu': ['Ubuntu'],
       'sans': ['Poppins'] // Ensure fonts with spaces have " " surrounding it.
     },
-    extend: {},
   },
   plugins: [],
 }

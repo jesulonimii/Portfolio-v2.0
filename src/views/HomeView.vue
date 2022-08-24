@@ -1,5 +1,7 @@
 <template>
-  <main class="bg-gray-800 px-16">
+  <main class="bg-gray-800 px-20">
+
+    <!-- Hero Section -->
     <div class="h-full min-h-[90vh]   items-center flex">
 
       <div class="w-1/6 flex justify-center items-center text-3xl text-amber-300">
@@ -26,7 +28,7 @@
         </div>
 
         <div class="mt-16 flex items-center w-fit rounded-full">
-          <p class="m-2">Scroll down</p>
+          <p class="m-2 text-gray-500">Scroll down</p>
           <i class="fa fa-arrow-down fa-bounce text-amber-300"></i>
         </div>
 
@@ -53,22 +55,99 @@
       </div>
 
 
-
     </div>
 
+    <!-- About Section -->
     <div class="h-full min-h-[60vh] w-full flex flex-col items-center text-white">
 
       <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">About Me</h2>
-      <p class="text-gray-400 mt-2">Get to Know me</p>
+      <p class="text-gray-400 mt-2">Get to know more about me!</p>
+
+      <div class="flex h-fit w-full mt-12 px-10 py-8">
+
+        <div class="h-full w-full px-20">
+          <p>
+            I am William Jesulonimi Abodunrin, a developer based in Lagos, Nigeria.
+            <br><br>
+            I am currently a 200Level student of Obafemi Awolowo University studying for a BSc. in Computer Science and
+            Engineering.
+            <br><br>
+            I am a full stack web developer and designer with 3+ years of experience equipped with knowledge of various
+            technologies to solve problems by building efficient solutions ranging from Web/Mobile Apps to APIs.
+            <br><br>
+            I love technology, animations, football, movies and Manchester United. <b class="text-red-500">❤</b>
+          </p>
+        </div>
+
+        <div class="h-full w-full flex flex-col justify-center items-center">
+
+          <!-- stacks with language used -->
+          <div class="flex justify-center items-center h-full w-full">
+            <div class="bg-[#252f3e] drop-shadow-lg h-fit py-12 px-8 z-10 rounded-2xl">
+
+              <ListItem class="my-4" content="Android Development" icon-color="#fcd34d"/>
+              <ListItem class="my-4" content="Website Development" icon-color="#fcd34d"/>
+              <ListItem class="my-4" content="Graphic Design" icon-color="#fcd34d"/>
+              <ListItem class="my-4" content="Logo Animations & Motion Design" icon-color="#fcd34d"/>
+
+            </div>
+            <div class="bg-amber-300 drop-shadow-lg absolute h-fit py-12 px-8 rotate-[5deg] rounded-2xl">
+              <div class="invisible">
+                <ListItem class="my-4" content="Android Development" icon-color="#fcd34d"/>
+                <ListItem class="my-4" content="Website Development" icon-color="#fcd34d"/>
+                <ListItem class="my-4" content="Graphic Design" icon-color="#fcd34d"/>
+                <ListItem class="my-4" content="Logo Animations & Motion Design" icon-color="#fcd34d"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="flex flex-col mt-12 w-full px-8">
+            <h3 class="font-ubuntu font-bold text-lg">Tech Stack 📚</h3>
+            
+            <div class="flex my-4">
+              <TechStackIcon stack="nodejs-icon"/>
+              <TechStackIcon stack="vue"/>
+              <TechStackIcon stack="tailwindcss-icon"/>
+              <TechStackIcon stack="javascript"/>
+              <TechStackIcon stack="mongodb-icon"/>
+              <TechStackIcon stack="kotlin-icon"/>
+              <TechStackIcon stack="firebase"/>
+            </div>
+            <div class="flex my-4">
+              <TechStackIcon stack="java"/>
+              <TechStackIcon stack="git-icon" background="true"/>
+              <TechStackIcon stack="github-icon" background="true"/>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
 
 
     </div>
+
+    <!-- Projects -->
+    <div class="h-full min-h-[60vh] mt-10 w-full flex flex-col items-center text-white">
+
+      <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">Projects</h2>
+      <p class="text-gray-400 mt-2">See some of my previous work!</p>
+
+
+
+    </div>
+
 
   </main>
 </template>
 
 <script setup>
 import Button from '../components/Button.vue'
+import ListItem from "../components/ListItem.vue";
+import TechStackIcon from "../components/TechStackIcon.vue"
+import ProjectItem from "../components/ProjectBar.vue"
 
 
 </script>

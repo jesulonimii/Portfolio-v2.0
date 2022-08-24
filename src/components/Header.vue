@@ -1,6 +1,6 @@
 <template>
 
-  <header class="sticky top-0 bg-gray-800 min-h-[10vh] h-fit flex justify-between items-center px-20 py-2">
+  <header class="sticky z-50 top-0 bg-gray-800 min-h-[10vh] h-fit flex justify-between items-center px-20 py-2">
     <a class="w-fit flex text-white items-center" href="/" >
       <img :src=imageLink class="max-w-[50px] rounded-full" alt="logo">
       <p class="mx-4 text-xl">{{title}}</p>

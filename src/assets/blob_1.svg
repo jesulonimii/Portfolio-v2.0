@@ -2,3 +2,7 @@
     <path fill="#FCD34D" d="M38,23.1C24.1,46.2,-29.9,47.3,-42.9,24.8C-55.9,2.3,-28,-43.8,-1,-44.4C26,-45,52,0,38,23.1Z"
           transform="translate(100 100)"/>
 </svg>
+
+<svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+</svg>
