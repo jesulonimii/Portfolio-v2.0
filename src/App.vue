@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex flex-col justify-between">
-    <Header title="Jesulonimii" imageLink="http://jesulonimii.herokuapp.com/images/jesulonimii.jpg"/>
-    <main class="h-[80vh]">
+    <Header title="Jèsúlonimii™" imageLink="http://jesulonimii.herokuapp.com/images/jesulonimii.jpg"/>
+    <main>
       <RouterView />
     </main>
   </div>
