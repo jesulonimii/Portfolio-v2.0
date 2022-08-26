@@ -2,7 +2,7 @@
   <main class="bg-gray-800 px-20">
 
     <!-- Hero Section -->
-    <div class="h-full min-h-[90vh]   items-center flex">
+    <div id="home" class="h-full min-h-[90vh]   items-center flex">
 
       <div class="w-1/6 flex justify-center items-center text-3xl text-amber-300">
         <div class="items-center flex flex-col justify-center px-2 py-2 rounded-full h-fit w-fit bg-gray-700">
@@ -58,7 +58,7 @@
     </div>
 
     <!-- About Section -->
-    <div class="h-full min-h-[60vh] w-full flex flex-col items-center text-white">
+    <div id="about" class="h-full min-h-[60vh] w-full flex flex-col items-center text-white">
 
       <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">About Me</h2>
       <p class="text-gray-400 mt-2">Get to know more about me!</p>
@@ -118,10 +118,10 @@
               <TechStackIcon stack="adobe-photoshop"/>
               <TechStackIcon stack="adobe-illustrator"/>
               <TechStackIcon stack="blender"/>
-              <TechStackIcon stack="html-5"/>
+              <TechStackIcon stack="mysql"/>
               <TechStackIcon stack="css-3"/>
               <TechStackIcon stack="git-icon"/>
-              <TechStackIcon stack="github-icon" background="true"/>
+              <TechStackIcon stack="php"/>
             </div>
 
           </div>
@@ -134,27 +134,93 @@
     </div>
 
     <!-- Projects -->
-    <div class="h-full min-h-[60vh] mt-10 w-full flex flex-col items-center text-white">
+    <div id="portfolio" class="h-full min-h-[60vh] mt-10 w-full flex flex-col items-center text-white">
 
       <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">Projects</h2>
       <p class="text-gray-400 mt-2">See some of my previous work!</p>
 
       <div class="w-full my-12 px-16 flex grid grid-cols-3 gap-8">
 
-        <ProjectItem title="Trin App" stack-used="Java + Kotlin + PHP + MySql" link=""
+        <ProjectItem class="w-fit" title="Link Qr" stack-used="Java + PHP" link=""
+                     img-src="link-qr-2.png"
+                     description="Android App for generating QR codes, also for scanning both Qr codes and Barcodes."
+                     type="Mobile App"/>
+
+        <ProjectItem title="Trin App" stack-used="Java + PHP + MySql" link=""
                      img-src="trin.png"
                      description="Android App developed for the Team Revival in Nigeria (TRIN) to keep members of the community up to date with latest news, articles from the community."
-                     type="TRIN100"  class="w-fit"/>
+                     type="Mobile App"  class="w-fit"/>
 
-        <ProjectItem class="w-fit" title="Reasonate" stack-used="Design" link=""
+        <ProjectItem class="w-fit" title="Aprihive App" stack-used="Java + Kotlin + NodeJs + Firebase" link=""
+                     img-src="aprihive.jfif"
+                     description="An android app made to allow users connect with other sellers, engage with customers and close more sales from the app."
+                     type="Mobile App"/>
+
+        <ProjectItem class="w-fit" title="Reasonate" stack-used="Illustrator" link=""
                      img-src="reasonate-1.png"
                      description="Logo design for Reasonate, a non-profit oragnization that provides a platform to people to express themselves"
-                     type="reasonate.com"/>
+                     type="Logo Design"/>
 
-        <ProjectItem class="w-fit" title="House Of Jemima" stack-used="Design" link=""
-                     img-src="reasonate-1.png"
-                     description="Logo design for Reasonate, a non-profit oragnization that provides a platform to people to express themselves"
-                     type="Design"/>
+        <ProjectItem class="w-fit" title="Camor" stack-used="Illustrator" link=""
+                     img-src="camor.png"
+                     description="A logo design for Camor. An imaginary charity foundation. Camor means Love"
+                     type="Logo Design"/>
+
+        <ProjectItem class="w-fit" title="House Of Jemima" stack-used="Html + Css + Bootstrap" link=""
+                     img-src="hoj.png"
+                     description="Website design for House of Jemima. A beauty store located in Lagos, Nigeria."
+                     type="Website Development"/>
+
+
+
+        <ProjectItem class="w-fit" title="Themelite" stack-used="Java" link=""
+                     img-src="themelite.png"
+                     description="Android Library for quick implementation of dark theme in natiive android apps."
+                     type="Android Library"/>
+
+
+        <ProjectItem class="w-fit" title="BYG App" stack-used="Java + PHP + MySql" link=""
+                     img-src="byg.png"
+                     description="Android Web App developed in Java for the Beautiful Yet Godly Website."
+                     type="Mobile App"/>
+
+        <ProjectItem class="w-fit" title="Edgewood College" stack-used="HTML + Tailwind CSS + NodeJs" link=""
+                     img-src="ewc-2.png"
+                     description="Website for Edgewood College, A sixth form college located in Lekki, Nigeria."
+                     type="Website Development"/>
+
+        <ProjectItem class="w-fit" title="Upskill" stack-used="Adobe After Effects" link=""
+                     img-src="upskill-new.mp4"
+                     description="Logo Animation for Upskill. A community of tech entusiasts based in Obafemi Awolowo University (OAU), Nigeria."
+                     type="Logo Animation" video="true"/>
+
+        <ProjectItem class="w-fit" title="Kik" stack-used="Adobe After Effects" link=""
+                     img-src="kik logo animation.mp4"
+                     description="Logo Animation for Kik. A social media messaging app. (Not Contracted)"
+                     type="Logo Animation" video="true"/>
+
+        <ProjectItem class="w-fit" title="Aprihive" stack-used="Adobe After Effects" link=""
+                     img-src="aprihive logo animation.mp4"
+                     description="Logo Animation for Aprihive. An android app made to allow users connect with other sellers, engage with customers and close more sales from the app."
+                     type="Logo Animation" video="true"/>
+
+        <ProjectItem class="w-fit" title="Target" stack-used="Adobe After Effects" link=""
+                     img-src="target logo animation.mp4"
+                     description="Logo Animation for Target. A retail company based in the US. (Not Contracted)"
+                     type="Logo Animation" video="true"/>
+
+        <ProjectItem class="w-fit" title="Krusad" stack-used="Adobe After Effects" link=""
+                     img-src="Krusad logo animation.mp4"
+                     description="Logo Animation for Krusad. A mobile app startup"
+                     type="Logo Animation" video="true"/>
+
+
+        <ProjectItem class="w-fit" title="NGD" stack-used="Adobe After Effects" link=""
+                     img-src="ndg logo intro animation.mp4"
+                     description="Logo Animation for Naija Graphics Designers (NGD). A community of designers based in Nigeria."
+                     type="Logo Animation" video="true"/>
+
+
 
 
       </div>

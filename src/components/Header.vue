@@ -6,10 +6,10 @@
       <p class="mx-4 text-xl">{{title}}</p>
     </a>
     <div class="flex text-md">
-      <a href="/" class="text-white mx-4">Home</a>
-      <a href="/about" class="text-white mx-4">About</a>
-      <a href="/portfolio" class="text-white mx-4">Portfolio</a>
-      <a href="/contact" class="text-white mx-4">Get in Touch</a>
+      <router-link to="#project" class="text-white mx-4">Home</router-link>
+      <router-link to="#about" class="text-white mx-4">About</router-link>
+      <router-link to="#portfolio" class="text-white mx-4">Portfolio</router-link>
+      <router-link to="#contact" class="text-white mx-4">Get in Touch</router-link>
     </div>
   </header>
 
