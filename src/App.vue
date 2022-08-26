@@ -1,8 +1,12 @@
 <template>
   <div class="w-full flex flex-col justify-between">
     <Header title="Jèsúlonimii™" imageLink="../src/assets/me.jpg"/>
-    <main>
-      <RouterView />
+    <main class="bg-gray-800">
+      <router-view v-slot="{ Component }" >
+        <transition name="slide-fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
   </div>
 
@@ -15,4 +19,15 @@ import Footer from './components/Footer.vue'
 import './assets/css/tailwind.css'
 
 </script>
+
+<style>
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(2em);
+  opacity: 0;
+}
+</style>
 

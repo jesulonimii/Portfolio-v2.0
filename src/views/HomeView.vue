@@ -1,8 +1,8 @@
 <template>
-  <main class="bg-gray-800 px-20">
+  <main class="bg-gray-800 px-0 lg:px-20">
 
     <!-- Hero Section -->
-    <div id="home" class="h-full min-h-[90vh]   items-center flex">
+    <div id="home" class="h-full min-h-[90vh]  items-center flex">
 
       <div class="w-1/6 flex justify-center items-center text-3xl text-amber-300">
         <div class="items-center flex flex-col justify-center px-2 py-2 rounded-full h-fit w-fit bg-gray-700">
@@ -14,45 +14,49 @@
 
       </div>
 
-      <div class="w-2/6 flex flex-col justify-center h-full text-white">
+      <div class=" w-5/6 h-full flex flex-col-reverse lg:flex-row">
+        <div class="w-full lg:w-2/5 flex flex-col justify-center h-full text-white">
 
-        <div class="max-w-[500px] h-fit">
-          <h1 class="font-ubuntu font-medium text-5xl">Hi, I'm William</h1>
-          <h2 class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
-          <p class="my-4 text-gray-300">
-            High-level experience in web design and devlopment knowledge, producing quality work.
-          </p>
-          <div class="my-8">
-            <Button name="Contact" href="/portfolio" color="bg-amber-300" textColor="text-gray-800" class="my-8"/>
+          <div class="lg:max-w-[500px] mx-8 lg:mx-0  h-fit">
+            <h1 class="font-ubuntu font-medium text-3xl lg:text-5xl ">Hi, I'm William</h1>
+            <h2 class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
+            <p class="my-4 text-gray-300">
+              High-level experience in web design and devlopment knowledge, producing quality work.
+            </p>
+            <div class="my-8">
+              <Button name="Contact" href="/portfolio" color="bg-amber-300" textColor="text-gray-800" class="my-8"/>
+            </div>
           </div>
+
+          <div class="mt-16 mx-8 lg:mx-0 flex items-center w-fit rounded-full">
+            <p class="m-2 text-gray-500">Scroll down</p>
+            <i class="fa fa-arrow-down fa-bounce text-amber-300"></i>
+          </div>
+
         </div>
 
-        <div class="mt-16 flex items-center w-fit rounded-full">
-          <p class="m-2 text-gray-500">Scroll down</p>
-          <i class="fa fa-arrow-down fa-bounce text-amber-300"></i>
-        </div>
+        <div class="hidden lg:block lg:w-3/5  my-8 lg:my-0 pr-56 md:px-24 lg:mr-12">
 
-      </div>
-
-      <div class="w-3/6 px-24 mr-12">
-
-        <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <mask id="mask0" mask-type="alpha">
-            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+          <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+              <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
         130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
         97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
         0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-          </mask>
-          <g mask="url(#mask0)">
-            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+            </mask>
+            <g mask="url(#mask0)">
+              <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
         165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-            <image class="w-full" href="../assets/me.jpg"/>
-          </g>
-        </svg>
+              <image class="w-full" href="../assets/me.jpg"/>
+            </g>
+          </svg>
 
+        </div>
       </div>
+
+
 
 
     </div>
@@ -63,9 +67,9 @@
       <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">About Me</h2>
       <p class="text-gray-400 mt-2">Get to know more about me!</p>
 
-      <div class="flex h-fit w-full mt-12 px-10 py-8">
+      <div class="flex flex-col lg:flex-row h-fit w-full mt-12 px-10 py-8">
 
-        <div class="h-full w-full px-20">
+        <div class="h-full w-full px-0 lg:px-20">
           <p>
             I am William Jesulonimi Abodunrin, a developer based in Lagos, Nigeria.
             <br><br>
@@ -79,11 +83,11 @@
           </p>
         </div>
 
-        <div class="h-full w-full flex flex-col justify-center items-center">
+        <div class="h-full my-12 lg:my-0 w-full flex flex-col justify-center items-center">
 
           <!-- stacks with language used -->
-          <div class="flex justify-center items-center h-full w-full">
-            <div class="bg-[#252f3e] drop-shadow-lg h-fit py-12 px-8 z-10 rounded-2xl">
+          <div class="flex justify-center items-center h-full w-full relative">
+            <div class="bg-[#252f3e] w-full drop-shadow-lg h-fit py-12 px-8 z-10 rounded-2xl">
 
               <ListItem class="my-4" content="Android Development" icon-color="#fcd34d"/>
               <ListItem class="my-4" content="Website Development" icon-color="#fcd34d"/>
@@ -91,7 +95,7 @@
               <ListItem class="my-4" content="Logo Animations & Motion Design" icon-color="#fcd34d"/>
 
             </div>
-            <div class="bg-amber-300 drop-shadow-lg absolute h-fit py-12 px-8 rotate-[5deg] rounded-2xl">
+            <div class="bg-amber-300 w-full drop-shadow-lg absolute h-fit py-12 px-8 rotate-[5deg] rounded-2xl">
               <div class="invisible">
                 <ListItem class="my-4" content="Android Development" icon-color="#fcd34d"/>
                 <ListItem class="my-4" content="Website Development" icon-color="#fcd34d"/>
@@ -139,86 +143,27 @@
       <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">Projects</h2>
       <p class="text-gray-400 mt-2">See some of my previous work!</p>
 
-      <div class="w-full my-12 px-16 flex grid grid-cols-3 gap-8">
+      <div class="w-full my-12 lg:px-16 flex flex-col md:flex-row">
 
-        <ProjectItem class="w-fit" title="Link Qr" stack-used="Java + PHP" link=""
-                     img-src="link-qr-2.png"
-                     description="Android App for generating QR codes, also for scanning both Qr codes and Barcodes."
-                     type="Mobile App"/>
 
         <ProjectItem title="Trin App" stack-used="Java + PHP + MySql" link=""
                      img-src="trin.png"
                      description="Android App developed for the Team Revival in Nigeria (TRIN) to keep members of the community up to date with latest news, articles from the community."
-                     type="Mobile App"  class="w-fit"/>
-
-        <ProjectItem class="w-fit" title="Aprihive App" stack-used="Java + Kotlin + NodeJs + Firebase" link=""
-                     img-src="aprihive.jfif"
-                     description="An android app made to allow users connect with other sellers, engage with customers and close more sales from the app."
                      type="Mobile App"/>
 
-        <ProjectItem class="w-fit" title="Reasonate" stack-used="Illustrator" link=""
-                     img-src="reasonate-1.png"
-                     description="Logo design for Reasonate, a non-profit oragnization that provides a platform to people to express themselves"
-                     type="Logo Design"/>
 
-        <ProjectItem class="w-fit" title="Camor" stack-used="Illustrator" link=""
+        <ProjectItem title="Camor" stack-used="Illustrator" link=""
                      img-src="camor.png"
                      description="A logo design for Camor. An imaginary charity foundation. Camor means Love"
                      type="Logo Design"/>
 
-        <ProjectItem class="w-fit" title="House Of Jemima" stack-used="Html + Css + Bootstrap" link=""
-                     img-src="hoj.png"
-                     description="Website design for House of Jemima. A beauty store located in Lagos, Nigeria."
-                     type="Website Development"/>
 
-
-
-        <ProjectItem class="w-fit" title="Themelite" stack-used="Java" link=""
-                     img-src="themelite.png"
-                     description="Android Library for quick implementation of dark theme in natiive android apps."
-                     type="Android Library"/>
-
-
-        <ProjectItem class="w-fit" title="BYG App" stack-used="Java + PHP + MySql" link=""
-                     img-src="byg.png"
-                     description="Android Web App developed in Java for the Beautiful Yet Godly Website."
-                     type="Mobile App"/>
-
-        <ProjectItem class="w-fit" title="Edgewood College" stack-used="HTML + Tailwind CSS + NodeJs" link=""
-                     img-src="ewc-2.png"
-                     description="Website for Edgewood College, A sixth form college located in Lekki, Nigeria."
-                     type="Website Development"/>
-
-        <ProjectItem class="w-fit" title="Upskill" stack-used="Adobe After Effects" link=""
-                     img-src="upskill-new.mp4"
-                     description="Logo Animation for Upskill. A community of tech entusiasts based in Obafemi Awolowo University (OAU), Nigeria."
-                     type="Logo Animation" video="true"/>
-
-        <ProjectItem class="w-fit" title="Kik" stack-used="Adobe After Effects" link=""
+        <ProjectItem title="Kik" stack-used="Adobe After Effects" link=""
                      img-src="kik logo animation.mp4"
                      description="Logo Animation for Kik. A social media messaging app. (Not Contracted)"
                      type="Logo Animation" video="true"/>
 
-        <ProjectItem class="w-fit" title="Aprihive" stack-used="Adobe After Effects" link=""
-                     img-src="aprihive logo animation.mp4"
-                     description="Logo Animation for Aprihive. An android app made to allow users connect with other sellers, engage with customers and close more sales from the app."
-                     type="Logo Animation" video="true"/>
 
-        <ProjectItem class="w-fit" title="Target" stack-used="Adobe After Effects" link=""
-                     img-src="target logo animation.mp4"
-                     description="Logo Animation for Target. A retail company based in the US. (Not Contracted)"
-                     type="Logo Animation" video="true"/>
-
-        <ProjectItem class="w-fit" title="Krusad" stack-used="Adobe After Effects" link=""
-                     img-src="Krusad logo animation.mp4"
-                     description="Logo Animation for Krusad. A mobile app startup"
-                     type="Logo Animation" video="true"/>
-
-
-        <ProjectItem class="w-fit" title="NGD" stack-used="Adobe After Effects" link=""
-                     img-src="ndg logo intro animation.mp4"
-                     description="Logo Animation for Naija Graphics Designers (NGD). A community of designers based in Nigeria."
-                     type="Logo Animation" video="true"/>
 
 
 
@@ -237,6 +182,9 @@ import Button from '../components/Button.vue'
 import ListItem from "../components/ListItem.vue";
 import TechStackIcon from "../components/TechStackIcon.vue"
 import ProjectItem from "../components/ProjectBar.vue"
+
+
+const videos = document.getElementsByTagName("video");
 
 
 </script>
