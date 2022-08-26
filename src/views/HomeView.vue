@@ -104,8 +104,8 @@
           <!-- Tech Stack -->
           <div class="flex flex-col mt-12 w-full px-8">
             <h3 class="font-ubuntu font-bold text-lg">Tech Stack 📚</h3>
-            
-            <div class="flex my-4">
+
+            <div class="grid grid-cols-8 gap-2 my-4">
               <TechStackIcon stack="nodejs-icon"/>
               <TechStackIcon stack="vue"/>
               <TechStackIcon stack="tailwindcss-icon"/>
@@ -113,13 +113,17 @@
               <TechStackIcon stack="mongodb-icon"/>
               <TechStackIcon stack="kotlin-icon"/>
               <TechStackIcon stack="firebase"/>
-            </div>
-            <div class="flex my-4">
               <TechStackIcon stack="java"/>
-              <TechStackIcon stack="git-icon" background="true"/>
+              <TechStackIcon stack="adobe-after-effects"/>
+              <TechStackIcon stack="adobe-photoshop"/>
+              <TechStackIcon stack="adobe-illustrator"/>
+              <TechStackIcon stack="blender"/>
+              <TechStackIcon stack="html-5"/>
+              <TechStackIcon stack="css-3"/>
+              <TechStackIcon stack="git-icon"/>
               <TechStackIcon stack="github-icon" background="true"/>
             </div>
-            
+
           </div>
 
         </div>
@@ -135,6 +139,25 @@
       <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">Projects</h2>
       <p class="text-gray-400 mt-2">See some of my previous work!</p>
 
+      <div class="w-full my-12 px-16 flex grid grid-cols-3 gap-8">
+
+        <ProjectItem title="Trin App" stack-used="Java + Kotlin + PHP + MySql" link=""
+                     img-src="trin.png"
+                     description="Android App developed for the Team Revival in Nigeria (TRIN) to keep members of the community up to date with latest news, articles from the community."
+                     type="TRIN100"  class="w-fit"/>
+
+        <ProjectItem class="w-fit" title="Reasonate" stack-used="Design" link=""
+                     img-src="reasonate-1.png"
+                     description="Logo design for Reasonate, a non-profit oragnization that provides a platform to people to express themselves"
+                     type="reasonate.com"/>
+
+        <ProjectItem class="w-fit" title="House Of Jemima" stack-used="Design" link=""
+                     img-src="reasonate-1.png"
+                     description="Logo design for Reasonate, a non-profit oragnization that provides a platform to people to express themselves"
+                     type="Design"/>
+
+
+      </div>
 
 
     </div>
