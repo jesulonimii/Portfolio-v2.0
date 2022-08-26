@@ -21,10 +21,10 @@
             <h1 class="font-ubuntu font-medium text-3xl lg:text-5xl ">Hi, I'm William</h1>
             <h2 class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
             <p class="my-4 text-gray-300">
-              High-level experience in web design and devlopment knowledge, producing quality work.
+              Founder Aprihive, Experienced developer and designer, providing solutions since 2019.
             </p>
             <div class="my-8">
-              <Button name="Contact" href="/portfolio" color="bg-amber-300" textColor="text-gray-800" class="my-8"/>
+              <Button name="Contact Me!" href="/mail" color="bg-amber-300" textColor="text-gray-800" class="my-8"/>
             </div>
           </div>
 
@@ -107,7 +107,7 @@
 
           <!-- Tech Stack -->
           <div class="flex flex-col mt-12 w-full px-8">
-            <h3 class="font-ubuntu font-bold text-lg">Tech Stack 📚</h3>
+            <h3 class="font-ubuntu font-bold text-lg w-full flex justify-center capitalize">Tech Stack and Tools 📚</h3>
 
             <div class="grid grid-cols-8 gap-2 my-4">
               <TechStackIcon stack="nodejs-icon"/>
@@ -161,7 +161,7 @@
         <ProjectItem title="Kik" stack-used="Adobe After Effects" link=""
                      img-src="kik logo animation.mp4"
                      description="Logo Animation for Kik. A social media messaging app. (Not Contracted)"
-                     type="Logo Animation" video="true"/>
+                     type="Logo Animation" :video="true" />
 
 
 
@@ -170,8 +170,12 @@
 
       </div>
 
+      <Button name="View Full Portfolio" href="/portfolio" custom-classes="text-gray-800"/>
+
 
     </div>
+    
+    <div class="h-16 my-12"></div>
 
 
   </main>

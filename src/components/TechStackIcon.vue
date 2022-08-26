@@ -1,8 +1,8 @@
 <template>
   <a :title=name(stack) >
     <img v-if="size != null" :style="[`transform: scale(${size})`]" class="mx-1 px-2" :src="[`https://raw.githubusercontent.com/gilbarbara/logos/master/logos/${stack}.svg`]" />
-    <img v-else-if="background" class="w-12 h-12 mx-1 px-2 bg-white rounded-full" :src="[`https://raw.githubusercontent.com/gilbarbara/logos/master/logos/${stack}.svg`]" />
-    <img v-else class="w-12 h-12 mx-1 px-2" :src="[`https://raw.githubusercontent.com/gilbarbara/logos/master/logos/${stack}.svg`]" />
+    <img v-else-if="background" class="w-12 h-12 mx-1 lg:px-2 bg-white rounded-full" :src="[`https://raw.githubusercontent.com/gilbarbara/logos/master/logos/${stack}.svg`]" />
+    <img v-else class="w-12 h-12 lg:mx-1 lg:px-2" :src="[`https://raw.githubusercontent.com/gilbarbara/logos/master/logos/${stack}.svg`]" />
   </a>
 
 </template>

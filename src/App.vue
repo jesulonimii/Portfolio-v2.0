@@ -8,6 +8,9 @@
         </transition>
       </router-view>
     </main>
+
+    <NavMenu  name="nav" class="lg:hidden"/>
+
   </div>
 
 </template>
@@ -17,6 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import './assets/css/tailwind.css'
+import NavMenu from './components/NavMenu.vue'
 
 </script>
 

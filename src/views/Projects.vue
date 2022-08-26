@@ -57,32 +57,32 @@
         <ProjectItem title="Upskill" stack-used="Adobe After Effects" link=""
                      img-src="upskill-new.mp4"
                      description="Logo Animation for Upskill. A community of tech entusiasts based in Obafemi Awolowo University (OAU), Nigeria."
-                     type="Logo Animation" video="true"/>
+                     type="Logo Animation" :video="true"/>
 
         <ProjectItem title="Kik" stack-used="Adobe After Effects" link=""
                      img-src="kik logo animation.mp4"
                      description="Logo Animation for Kik. A social media messaging app. (Not Contracted)"
-                     type="Logo Animation" video="true"/>
+                     type="Logo Animation" :video="true"/>
 
         <ProjectItem title="Aprihive" stack-used="Adobe After Effects" link=""
                      img-src="aprihive logo animation.mp4"
                      description="Logo Animation for Aprihive. An android app made to allow users connect with other sellers, engage with customers and close more sales from the app."
-                     type="Logo Animation" video="true"/>
+                     type="Logo Animation" :video="true"/>
 
         <ProjectItem title="Target" stack-used="Adobe After Effects" link=""
                      img-src="target logo animation.mp4"
                      description="Logo Animation for Target. A retail company based in the US. (Not Contracted)"
-                     type="Logo Animation" video="true"/>
+                     type="Logo Animation" :video="true"/>
 
         <ProjectItem title="EdgeWood College" stack-used="Adobe After Effects" link=""
                      img-src="Edgewood-logo-animation.mp4"
                      description="Logo Animation for Krusad. A mobile app startup"
-                     type="Logo Animation" video="true"/>
+                     type="Logo Animation" :video="true"/>
 
         <ProjectItem title="NGD" stack-used="Adobe After Effects" link=""
                      img-src="ndg logo intro animation.mp4"
                      description="Logo Animation for Naija Graphics Designers (NGD). A community of designers based in Nigeria."
-                     type="Logo Animation" video="true"/>
+                     type="Logo Animation" :video="true"/>
 
 
 

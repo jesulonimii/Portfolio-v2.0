@@ -1,6 +1,6 @@
 <template>
 
-  <div v-if=video class="my-4 w-full justify-center flex md:block">
+  <div v-if=video class="mx-0 my-4 w-full justify-center flex md:block">
     <div
         class="pointer-events-none lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute">
 
@@ -18,7 +18,7 @@
           <p class="text-sm mx-2">{{ stackUsed }}</p>
         </div>
 
-        <Button name="Learn More" :href=link custom-classes="text-sm lg:text-md my-4 text-gray-700 font-bold flex justify-center "/>
+        <Button name="View Project" :href=link custom-classes="text-sm lg:text-md my-4 text-gray-700 font-bold flex justify-center "/>
 
       </div>
 
@@ -39,7 +39,7 @@
 
   </div>
 
-  <div v-else class="my-4 w-full justify-center flex md:block">
+  <div v-else class="mx-0 my-4 w-full justify-center flex md:block">
     <div
         class="group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-gradient-to-t from-[#000000c7] via-[#00000042] to-transparent bg-cover rounded-3xl absolute">
 
@@ -57,7 +57,7 @@
           <p class="text-sm mx-2">{{ stackUsed }}</p>
         </div>
 
-        <Button name="Learn More" :href=link custom-classes="text-sm lg:text-md my-4 text-gray-700 font-bold flex justify-center "/>
+        <Button name="View Project" :href=link custom-classes="text-sm lg:text-md my-4 text-gray-700 font-bold flex justify-center "/>
 
       </div>
 
