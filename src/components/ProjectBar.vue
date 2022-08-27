@@ -1,11 +1,9 @@
 <template>
 
   <div v-if=video class="mx-0 my-4 w-full justify-center flex md:block">
-    <div
-        class="pointer-events-none lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute">
+    <div id="vidOverlay"  class="pointer-events-none lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute">
 
-      <div
-          class="h-full flex flex-col rounded-md p-6 bg-[#374151ba] group-hover:bg-[#1f2937e6]  translate-y-[70%] lg:translate-y-[75%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">
+      <div  class="h-full flex flex-col rounded-md p-6 bg-[#374151ba] group-hover:bg-[#1f2937e6] hover:bg-[#1f2937e6]  translate-y-[70%] lg:translate-y-[75%] hover:translate-y-[0%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">
         <h2 class="text-lg text-white font-bold capitalize">{{ title }}</h2>
         <h3 class="text-sm text-amber-300 uppercase">{{ type }}</h3>
 
@@ -24,8 +22,8 @@
 
     </div>
 
-    <div class="lg:hidden w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] rounded-3xl video-container relative overflow-hidden z-0">
-      <video muted loop class="w-full h-full absolute object-cover z-0" onmouseover="this.play()" onmouseout="this.pause()" >
+    <div class="peer-hover:video-container lg:hidden w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] rounded-3xl  relative overflow-hidden z-0">
+      <video id="video" muted loop class="w-full h-full absolute object-cover z-0"  @mouseover=onVidPlay($event) @mouseout=onVidPause($event) >
         <source :src="[`/video/${imgSrc}`]" type="video/mp4" />
       </video>
     </div>
@@ -41,7 +39,7 @@
 
   <div v-else class="mx-0 my-4 w-full justify-center flex md:block">
     <div
-        class="group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-gradient-to-t from-[#000000c7] via-[#00000042] to-transparent bg-cover rounded-3xl absolute">
+        class="group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden  bg-cover rounded-3xl absolute">
 
       <div
           class="h-full flex flex-col rounded-md p-6 bg-[#374151ba] group-hover:bg-[#1f2937e6]  translate-y-[70%] lg:translate-y-[75%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">
@@ -109,6 +107,37 @@ defineProps({
 
 
 //video = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+
+function onVidPlay(event) {
+
+  document.querySelectorAll('video').forEach(vid => vid.pause());
+  event.target.play()
+
+  let overlay = document.querySelectorAll('#vidOverlay')
+
+  overlay.forEach((x)=>{
+
+    x.setAttribute('class', 'lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute')
+
+  })
+
+
+
+
+}
+
+function onVidPause(event) {
+
+  let overlay = document.querySelectorAll('#vidOverlay')
+
+  overlay.forEach((x)=>{
+
+    x.setAttribute('class', 'pointer-events-none lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute')
+
+  })
+
+
+}
 
 
 

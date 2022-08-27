@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Redirect from '../views/RedirectView.vue'
 import ProjectView from '../views/Projects.vue'
+import ProjectInfo from '../views/ProjectInfo.vue'
+
 
 
 const router = createRouter({
@@ -20,10 +22,6 @@ const router = createRouter({
           },
           {
             property: 'og:description',
-            content: 'Jèsúlonimii™ | Fullstack Developer & Designer'
-          },
-          {
-            property: 'twitter:title',
             content: 'Jèsúlonimii™ | Fullstack Developer & Designer'
           }
         ]
@@ -66,8 +64,26 @@ const router = createRouter({
     },
     {
       path: '/portfolio',
-      name: 'Portfoli0',
+      name: 'Portfolio',
       component: ProjectView,
+      meta: {
+        title: 'Portfolio - Jèsúlonimii™',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'William Jesulonimi Abodunrin Portfolio'
+          },
+          {
+            property: 'og:description',
+            content: 'William Jesulonimi Abodunrin Portfolio'
+          }
+        ]
+      }
+    },
+    {
+      path: '/portfolio/:name',
+      name: `Portfolio for `,
+      component: ProjectInfo,
       meta: {
         title: 'Portfolio - Jèsúlonimii™',
         metaTags: [

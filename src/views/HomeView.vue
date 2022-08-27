@@ -6,10 +6,10 @@
 
       <div class="w-1/6 flex justify-center items-center text-3xl text-amber-300">
         <div class="items-center flex flex-col justify-center px-2 py-2 rounded-full h-fit w-fit bg-gray-700">
-          <a href="#" class="w-fit"><i class="my-2 fa fa-github"></i></a>
-          <a href="#" class="w-fit"><i class="my-2 fa-brands fa-linkedin"></i></a>
-          <a href="#" class="w-fit"><i class="my-2 fa fa-instagram"></i></a>
-          <a href="#" class="w-fit"><i class="my-2 fa fa-twitter"></i></a>
+          <a href="/github" target="_blank" class="w-fit"><i class="my-2 fa fa-github"></i></a>
+          <a href="https://linkedin.com/in/jesulonimii" target="_blank" class="w-fit"><i class="my-2 fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/jesulonimii" target="_blank" class="w-fit"><i class="my-2 fa fa-instagram"></i></a>
+          <a href="https://twitter.com/jesulonimii" target="_blank" class="w-fit"><i class="my-2 fa fa-twitter"></i></a>
         </div>
 
       </div>
@@ -87,7 +87,7 @@
         <div class="h-full my-12 lg:my-0 w-full flex flex-col justify-center items-center">
 
           <!-- stacks with language used -->
-          <div class="flex justify-center items-center h-full w-full relative">
+          <div class="flex justify-center items-center h-full w-full my-8 lg:my-12 w-fit relative">
             <div class="bg-[#252f3e] w-full drop-shadow-lg h-fit py-12 px-8 z-10 rounded-2xl">
 
               <ListItem class="my-4" content="Android Development" icon-color="#fcd34d"/>
@@ -147,13 +147,13 @@
       <div class="w-full my-12 lg:px-16 flex flex-col md:flex-row">
 
 
-        <ProjectItem title="Trin App" stack-used="Java + PHP + MySql" link=""
+        <ProjectItem title="Trin App" stack-used="Java + PHP + MySql" link="portfolio/trin"
                      img-src="trin.png"
                      description="Android App developed for the Team Revival in Nigeria (TRIN) to keep members of the community up to date with latest news, articles from the community."
                      type="Mobile App"/>
 
 
-        <ProjectItem title="Camor" stack-used="Illustrator" link=""
+        <ProjectItem title="Camor" stack-used="Illustrator" link="portfolio/camor"
                      img-src="camor.png"
                      description="A logo design for Camor. An imaginary charity foundation. Camor means Love"
                      type="Logo Design"/>
