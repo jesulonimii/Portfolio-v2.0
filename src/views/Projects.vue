@@ -14,7 +14,7 @@
                      description="Android App for generating QR codes, also for scanning both Qr codes and Barcodes."
                      type="Mobile App"/>
 
-        <ProjectItem title="Trin App" stack-used="Java + PHP + MySql" link=""
+        <ProjectItem title="Trin App" stack-used="Java + PHP + MySql" link="/portfolio/trin"
                      img-src="trin.png"
                      description="Android App developed for the Team Revival in Nigeria (TRIN) to keep members of the community up to date with latest news, articles from the community."
                      type="Mobile App"/>

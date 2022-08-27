@@ -1,7 +1,10 @@
 <template>
 
-  <a v-if="external" :href=href :class="[color, textColor, 'px-6 py-2.5 rounded-lg', customClasses]">{{name}}</a>
-  <router-link v-else :to=href :class="[color, textColor, 'px-6 py-2.5 rounded-lg', customClasses]">{{name}}</router-link>
+
+  <a :href=href :class="[color, textColor, 'px-2 py-6 rounded-lg flex items-center justify-center', customClasses]">
+    <i class="fa fa-github text-2xl"></i>
+    <p class="mx-2 uppercase text-sm font-bold">{{name}} </p>
+  </a>
 
 </template>
 
