@@ -18,6 +18,7 @@
         <div class="w-full lg:w-2/5 flex flex-col justify-center h-full text-white">
 
           <div class="lg:max-w-[500px] mx-8 lg:mx-0  h-fit">
+            <h1 class="hidden">Founder Aprihive, Experienced developer and designer, providing solutions since 2019.</h1>
             <h1 class="font-ubuntu font-medium text-3xl lg:text-5xl ">Hi, I'm William</h1>
             <h2 class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
             <p class="my-4 text-gray-300">

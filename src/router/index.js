@@ -25,14 +25,6 @@ const router = createRouter({
           {
             property: 'twitter:title',
             content: 'Jèsúlonimii™ | Fullstack Developer & Designer'
-          },
-          {
-            property: 'twitter:description',
-            content: 'Full stack developer and designer with 3+ years of experience'
-          },
-          {
-            property: 'twitter:description',
-            content: 'Full stack developer and designer with 3+ years of experience'
           }
         ]
       }
@@ -45,7 +37,7 @@ const router = createRouter({
       name: 'Github',
       path: '/github',
       component: Redirect,
-      beforeEnter() {location.href = 'https://twitter.com/jesulonimii'}
+      beforeEnter() {location.href = 'https://github.com/jesulonimii'}
     },
     {
       name: 'Email',
