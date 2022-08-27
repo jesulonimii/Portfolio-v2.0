@@ -23,7 +23,7 @@
     </div>
 
     <div class="peer-hover:video-container lg:hidden w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] rounded-3xl  relative overflow-hidden z-0">
-      <video id="video" muted loop class="w-full h-full absolute object-cover z-0"  @mouseover=onVidPlay($event) @mouseout=onVidPause($event) >
+      <video id="video" muted loop class="w-full h-full absolute object-cover z-0"  @mouseover=onVidPlay($event) >
         <source :src="[`/video/${imgSrc}`]" type="video/mp4" />
       </video>
     </div>
@@ -115,12 +115,12 @@ function onVidPlay(event) {
 
   let overlay = document.querySelectorAll('#vidOverlay')
 
-  overlay.forEach((x)=>{
+  /*overlay.forEach((x)=>{
 
     x.setAttribute('class', 'lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute')
 
   })
-
+*/
 
 
 
