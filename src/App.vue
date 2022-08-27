@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col justify-between">
-    <Header title="Jèsúlonimii™" imageLink="../src/assets/me.jpg"/>
+    <Header title="Jèsúlonimii™" imageLink="/img/me.jpg"/>
     <main class="bg-gray-800">
       <router-view v-slot="{ Component }" >
         <transition name="slide-fade" mode="out-in">
