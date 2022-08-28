@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import Redirect from '../views/RedirectView.vue'
 import ProjectView from '../views/Projects.vue'
 import ProjectInfo from '../views/ProjectInfo.vue'
+import NotFound from '../views/NotFound.vue'
+
 
 
 
@@ -86,6 +88,23 @@ const router = createRouter({
       component: ProjectInfo,
       meta: {
         title: 'Portfolio - Jèsúlonimii™',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'William Jesulonimi Abodunrin Portfolio'
+          },
+          {
+            property: 'og:description',
+            content: 'William Jesulonimi Abodunrin Portfolio'
+          }
+        ]
+      }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      component: NotFound,
+      meta: {
+        title: 'Not Found- Jèsúlonimii™',
         metaTags: [
           {
             name: 'description',
