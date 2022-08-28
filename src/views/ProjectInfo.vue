@@ -165,7 +165,7 @@ const portfolioItemData = {
     link: {to:"github", url: "https://github.com/jesulonimii/Themelite"}
   },
   dutyist: {
-    name: "Camor",
+    name: "Dutyist",
     company: "Dutyist",
     description: "Dutyist is a productivity app.",
     product: "Logo Design",
