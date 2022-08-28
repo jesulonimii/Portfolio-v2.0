@@ -82,7 +82,7 @@ const router = createRouter({
     },
     {
       path: '/portfolio/:name',
-      name: `Portfolio for `,
+      name: 'page for',
       component: ProjectInfo,
       meta: {
         title: 'Portfolio - Jèsúlonimii™',
