@@ -8,19 +8,26 @@
           <div class="w-full rounded-3xl my-4 pb-[100%] lg:h-full bg-center bg-cover" style="background-image: url('/img/portfolio/trin.png')"></div>
 
         </div>-->
-    <div class="w-full lg:w-1/2 px-8 lg:py-8 flex flex-col h-full">
+    <div class="w-full lg:w-1/2 px-8 lg:pt-8 flex flex-col h-full">
       <h1 class="font-ubuntu font-bold text-white text-3xl">{{ project.name }}</h1>
       <p class="text-amber-300 text-sm my-2">{{ project.company }}</p>
 
-      <swiper class="w-full pb-[100%] my-4 lg:h-full" :effect="fade" :centered-slides=true :loop=true :autoplay=autoplay :grab-cursor=true :pagination=true :slides-per-view=1.1 :space-between=10 @swiper=onSwiper @slideChange=onSlideChange>
+      <swiper v-if="project.images.length === 1" class="w-full pb-[100%] my-4 lg:h-full" :slides-per-view=1 :space-between=10 @swiper=onSwiper @slideChange=onSlideChange>
+
+        <swiper-slide v-for="img in project.images">
+          <div class="w-full rounded-3xl my-4 pb-[100%] lg:h-full bg-center bg-cover" :style="[`background-image: url('/img/portfolio/${img}')`]"></div>
+        </swiper-slide>
+      </swiper>
+      <swiper v-else class="w-full pb-[100%] my-4 lg:h-full" :centered-slides=true :loop=true :autoplay=autoplay :grab-cursor=true :pagination=true :slides-per-view=1.1 :space-between=10 @swiper=onSwiper @slideChange=onSlideChange>
 
         <swiper-slide v-for="img in project.images">
           <div class="w-full rounded-3xl my-4 pb-[100%] lg:h-full bg-center bg-cover" :style="[`background-image: url('/img/portfolio/${img}')`]"></div>
         </swiper-slide>
       </swiper>
 
+
     </div>
-    <div class="w-full lg:w-1/2 px-8 lg:py-8">
+    <div class="w-full lg:w-1/2 px-8 lg:pt-8">
 
       <div class="my-4 flex flex-col">
         <h2 class="text-sm text-amber-300">Description</h2>
@@ -43,18 +50,17 @@
       </div>
 
       <div class="my-4 flex flex-col">
-        <h2 class="text-sm text-amber-300">Technologies Used</h2>
+        <h2 class="text-sm text-amber-300">Technologies & Tools Used</h2>
         <ul class="list-disc px-5">
           <li v-for="x in project.stack">{{ x }}</li>
 
         </ul>
       </div>
 
-      <div class="flex w-full h-6">
-        <IconButton href="https://github.com/jesulonimii/Trin-App" name="Check Project" text-color="text-gray-800" />
+      <div class="flex w-full h-6 mt-8 mb-36 lg:mb-0">
+        <IconButton v-if="project.link" :href="project.link.url" :icon="project.link.to" name="Check Project" text-color="text-gray-800" />
       </div>
-
-
+      
     </div>
 
   </main>
@@ -77,19 +83,110 @@ const portfolioItemData = {
     product: "Mobile App",
     role: "I was tasked with developing a simple blog App that featured snippets from discussions, articles by members of the community.",
     timeline: "March 2021 - April 2021",
-    images: ["trin.png", "byg.png"],
-    stack: ["Java", "PHP", "Mysql"]
+    images: ["trin.png"],
+    stack: ["Java", "PHP", "Mysql"],
+    link: {to:"github", url: "https://github.com/jesulonimii/Trin-App"}
   },
   byg: {
     name: "BYG App",
-    company: "Beautiful Yet Godly",
-    description: "Beautiful Yet Godly is a community of teenagers in Nigeria whose goal and mission is to divinely inspire people to yearn and build an intimate relationship with God.",
+    company: "Personal Project",
+    description: "Beautiful Yet Godly is an organization that writes christian article that'll keep you encouraged, laughing or in deep thoughts. 🙂",
     product: "Mobile App",
-    role: "I was tasked with developing a simple blog App that featured snippets from discussions, articles by members of the community.",
-    timeline: "June 2021 - July 2021",
-    images: ["byg.png", "camor.png"],
-    stack: ["Java", "PHP", "Mysql"]
-  }
+    role: "I developed an App that housed the website for BYG website and links to the social media handles of the community and also displayed in a feed: news flash and short articles from a REST API I built.",
+    timeline: "February 2021 - March 2021",
+    images: ["byg.png"],
+    stack: ["Java", "PHP", "Mysql"],
+    link: {to:"github", url: "https://github.com/jesulonimii/BYG-App-Source-Code"}
+  },
+  linkQr: {
+    name: "Link-QR App",
+    company: "Personal Project",
+    description: "Link-Qr is an android application for creating QR codes, scanning Qr codes and barcodes in real time.",
+    product: "Mobile App",
+    role: "I developed the frontend of the app.",
+    timeline: "February 2021 - March 2021",
+    images: ["link-qr.png", "link-qr-2.png"],
+    stack: ["Java", "PHP", "Mysql"],
+    link: {to:"github", url: "https://github.com/jesulonimii/Link-Qr"}
+  },
+  aprihive: {
+    name: "Aprihive",
+    company: "Aprihive",
+    description: "Aprihive is an android app made to allow users connect with other sellers, engage with customers and close more sales from the app.",
+    product: "Website, Mobile App & Backend",
+    role: "I developed both the frontend app, the backend and the landing page of the website.",
+    timeline: "October 2021 - present.",
+    images: ["aprihive.jfif", "aprihive-4.jpg", "aprihive-2.jpg", "aprihive-3.jpg",  "aprihive-5.jpg"],
+    stack: ["Java", "Kotlin", "Firebase", "NodeJs", "TailwindCss" ],
+    link: {to:"globe", url: "https://aprihive.com"}
+  },
+  camor: {
+    name: "Camor",
+    company: "Personal Project",
+    description: "Camor is an imaginary charity foundation. Camor means Love.",
+    product: "Logo Design",
+    role: "Logo design to capture what the brand is all about.",
+    timeline: "October 2021",
+    images: ["camor.png", "camor-4.jpg", "camor-2.jpg", "camor-3.jpg" ],
+    stack: ["Inkscape"],
+    link: null
+  },
+  reasonate: {
+    name: "Reasonate",
+    company: "Personal Project",
+    description: "Reasonate is an imaginary non-profit oragnization that provides a platform to people to express themselves and the issues they go through in their society as a result of environment, government etc.",
+    product: "Logo Design",
+    role: "Logo design to capture what the brand is all about.",
+    timeline: "February 2021",
+    images: ["Reasonate-1.png", "Reasonate-4.jpg", "Reasonate-2.jpg", "Reasonate-3.jpg" ],
+    stack: ["Inkscape", "Adobe Photoshop", "Figma"],
+    link: null
+  },
+  themelite: {
+    name: "Themelite",
+    company: "Themelite",
+    description: "Themelite is an android Android Library for quick implementation of dark theme in native android apps.",
+    product: "Java Library",
+    role: "I developed the library in android studio.",
+    timeline: "February 2021",
+    images: ["Themelite.png"],
+    stack: ["Java"],
+    link: {to:"github", url: "https://github.com/jesulonimii/Themelite"}
+  },
+  hoj: {
+    name: "House Of Jemima",
+    company: "House of Jemima",
+    description: "House of Jemima is a beauty store located in Lagos, Nigeria.",
+    product: "Website",
+    role: "I developed the website to show information about the store and drive visitors to the social media handles of the store.",
+    timeline: "June 2021",
+    images: ["hoj.png"],
+    stack: ["Bootstrap",  "HTML", "CSS", "Javascript"],
+    link: {to:"github", url: "https://github.com/jesulonimii/Themelite"}
+  },
+  dutyist: {
+    name: "Camor",
+    company: "Dutyist",
+    description: "Dutyist is a productivity app.",
+    product: "Logo Design",
+    role: "Logo design to capture what the brand is all about.",
+    timeline: "July 2022",
+    images: ["dutyist-1.png", "dutyist-2.png" ],
+    stack: ["July 2022"],
+    link: null
+  },
+  "crystal-stitches": {
+    name: "Crystal Stitches",
+    company: "Crystal Stitches",
+    description: "Crystal Stitches is an imaginary charity foundation. Crystal Stitches means Love.",
+    product: "Logo Design",
+    role: "Logo design to capture what the brand is all about.",
+    timeline: "July 2022",
+    images: ["Crystal-Stitches.png", "crystal-stitches (6).png", "crystal-stitches (2).png", "crystal-stitches (3).png",  "crystal-stitches (4).png", "crystal-stitches (1).png" ],
+    stack: ["Adobe Illustrator"],
+    link: null
+  },
+
 }
 
 let project = portfolioItemData[route.params.name]

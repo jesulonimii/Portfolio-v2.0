@@ -2,7 +2,7 @@
 
 
   <a :href=href :class="[color, textColor, 'px-2 py-6 rounded-lg flex items-center justify-center', customClasses]">
-    <i class="fa fa-github text-2xl"></i>
+    <i :class="['fa text-2xl', `fa-${icon}`]"></i>
     <p class="mx-2 uppercase text-sm font-bold">{{name}} </p>
   </a>
 
@@ -27,6 +27,9 @@ defineProps({
     required: true
   },
   customClasses: {
+    type: String
+  },
+  icon: {
     type: String
   },
   external: {
