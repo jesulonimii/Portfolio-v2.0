@@ -71,6 +71,7 @@
       <div class="flex flex-col lg:flex-row h-fit w-full mt-12 px-10 py-8">
 
         <div class="h-full w-full px-0 lg:px-20">
+          <h1 class="hidden">Who is Abodunrin William Jesulonimi?</h1>
           <p>
             I am William Jesulonimi Abodunrin, a developer based in Lagos, Nigeria.
             <br><br>
