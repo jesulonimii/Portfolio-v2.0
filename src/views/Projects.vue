@@ -90,7 +90,7 @@
                      type="Logo Animation" :video="true"/>
 
         <ProjectItem class="lg:w-full" title="NGD" stack-used="Adobe After Effects" link="/portfolio/ngd-logo-animation"
-                     img-src="ndg logo intro animation.mp4"
+                     img-src="ngd logo intro animation.mp4"
                      description="Logo Animation for Naija Graphics Designers (NGD). A community of designers based in Nigeria."
                      type="Logo Animation" :video="true"/>
 
