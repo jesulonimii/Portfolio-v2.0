@@ -1,9 +1,10 @@
 <template>
 
-  <div v-if=video class="mx-0 my-4 w-full justify-center flex md:block">
-    <div id="vidOverlay"  class="pointer-events-none lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute">
+  <div v-if=video class="lg:mx-2 my-4 w-full  flex md:w-full lg:w-1/3 justify-center relative">
 
-      <div  class="h-full flex flex-col rounded-md p-6 bg-[#374151ba] group-hover:bg-[#1f2937e6] hover:bg-[#1f2937e6]  translate-y-[70%] lg:translate-y-[75%] hover:translate-y-[0%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">
+    <div id="overlay" class="group w-full aspect-square overflow-hidden bg-cover rounded-3xl absolute z-10 "  >
+
+      <div class="coverlay w-full h-full flex flex-col rounded-md p-6 sm:pt-8 md:pt-2 lg:pt-6 bg-[#374151ba] absolute group-hover:bg-[#1f2937e6] hover:bg-[#1f2937e6]  translate-y-[70%] sm:translate-y-[84.5%] lg:translate-y-[75%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">
         <h2 class="text-lg text-white font-bold capitalize">{{ title }}</h2>
         <h3 class="text-sm text-amber-300 uppercase">{{ type }}</h3>
 
@@ -22,14 +23,8 @@
 
     </div>
 
-    <div class="peer-hover:video-container lg:hidden w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] rounded-3xl  relative overflow-hidden z-0">
-      <video id="video" muted loop class="w-full h-full absolute object-cover z-0"  @mouseover=onVidPlay($event) >
-        <source :src="[`/video/${imgSrc}`]" type="video/mp4" />
-      </video>
-    </div>
-
-    <div class="hidden lg:block w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] rounded-3xl relative overflow-hidden z-0">
-      <video autoplay muted loop class="w-full h-full absolute object-cover z-0" >
+    <div class="w-full aspect-square rounded-3xl relative flex overflow-hidden z-0">
+      <video id="video" muted loop class="w-full h-full absolute object-cover z-0"  >
         <source :src="[`/video/${imgSrc}`]" type="video/mp4" />
       </video>
     </div>
@@ -37,12 +32,10 @@
 
   </div>
 
-  <div v-else class="mx-0 my-4 w-full justify-center flex md:block">
-    <div
-        class="group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden  bg-cover rounded-3xl absolute">
+  <div v-else class="lg:mx-2 my-4 w-full h-full flex md:w-full lg:w-1/3 justify-center  relative">
 
-      <div
-          class="h-full flex flex-col rounded-md p-6 bg-[#374151ba] group-hover:bg-[#1f2937e6]  translate-y-[70%] lg:translate-y-[75%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">
+    <div id="overlay" class="group w-full aspect-square  overflow-hidden  bg-cover rounded-3xl absolute">
+      <div class=" coverlay w-full h-full flex flex-col rounded-md p-6 sm:pt-8 md:pt-2 lg:pt-6 bg-[#374151ba] absolute group-hover:bg-[#1f2937e6]  translate-y-[70%] sm:translate-y-[84.5%] lg:translate-y-[75%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">
         <h2 class="text-lg text-white font-bold capitalize">{{ title }}</h2>
         <h3 class="text-sm text-amber-300 uppercase">{{ type }}</h3>
 
@@ -58,10 +51,9 @@
         <Button name="View Project" :href=link custom-classes="text-sm lg:text-md my-4 text-gray-700 font-bold flex justify-center "/>
 
       </div>
-
     </div>
 
-    <div class="w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] bg-cover bg-center rounded-3xl"
+    <div class="w-full h-fit aspect-square bg-cover bg-center rounded-3xl"
          :style="[`background-image: url('/img/portfolio/${imgSrc}');`]">
 
     </div>
@@ -72,6 +64,7 @@
 </template>
 
 <script setup>
+
 import TechStackIcon from "./TechStackIcon.vue";
 import Button from "./Button.vue";
 
@@ -108,34 +101,37 @@ defineProps({
 
 //video = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-function onVidPlay(event) {
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 
-  document.querySelectorAll('video').forEach(vid => vid.pause());
-  event.target.play()
-
-  let overlay = document.querySelectorAll('#vidOverlay')
-
-  /*overlay.forEach((x)=>{
-
-    x.setAttribute('class', 'lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute')
-
-  })
-*/
-
-
-
+  );
 }
 
-function onVidPause(event) {
+document.addEventListener('scroll', autoPlay)
 
-  let overlay = document.querySelectorAll('#vidOverlay')
+function autoPlay(){
 
-  overlay.forEach((x)=>{
+  const video = document.querySelectorAll("#video")
 
-    x.setAttribute('class', 'pointer-events-none lg:pointer-events-auto z-10 group w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden bg-cover rounded-3xl absolute')
+  video.forEach((el)=>{
+    if (isInViewport(el)){
 
+      if (el){
+        el.play()
+      }
+
+    }
+    else {
+      if (!el.paused){
+        el.pause()
+      }
+    }
   })
-
 
 }
 
@@ -143,5 +139,76 @@ function onVidPause(event) {
 
 
 </script>
+
+<style scoped>
+
+@media (min-width: 500px) {
+  .coverlay{
+    transform: translateY(80%);
+  }
+}
+
+@media (min-width: 580px) {
+  .coverlay{
+    transform: translateY(84%);
+  }
+}
+
+@media (min-width: 625px) {
+  .coverlay{
+    transform: translateY(86%);
+  }
+}
+
+@media (min-width: 619px) {
+  .coverlay{
+    transform: translateY(84%);
+  }
+}
+
+@media (min-width: 735px) {
+  .coverlay{
+    transform: translateY(85%);
+  }
+}
+
+@media (min-width: 772px) {
+  .coverlay{
+    transform: translateY(80%);
+  }
+}
+
+@media (min-width: 980px) {
+  .coverlay{
+    transform: translateY(85%);
+  }
+}
+
+@media (min-width: 1025px) {
+  .coverlay{
+    transform: translateY(60%);
+  }
+}
+
+@media (min-width: 1095px) {
+  .coverlay{
+    transform: translateY(65%);
+  }
+}
+
+@media (min-width: 1195px) {
+  .coverlay{
+    transform: translateY(69%);
+  }
+}
+
+@media (min-width: 1320px) {
+  .coverlay{
+    transform: translateY(75%);
+  }
+}
+
+
+</style>
 
 

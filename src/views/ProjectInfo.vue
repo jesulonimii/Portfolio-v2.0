@@ -8,11 +8,20 @@
           <div class="w-full rounded-3xl my-4 pb-[100%] lg:h-full bg-center bg-cover" style="background-image: url('/img/portfolio/trin.png')"></div>
 
         </div>-->
-    <div class="w-full lg:w-1/2 px-8 lg:pt-8 flex flex-col h-full">
+    <div class="w-full lg:w-1/2 px-8 lg:pt-8 flex flex-col h-full my-4">
       <h1 class="font-ubuntu font-bold text-white text-3xl">{{ project.name }}</h1>
       <p class="text-amber-300 text-sm my-2">{{ project.company }}</p>
 
-      <swiper v-if="project.images.length === 1" class="w-full pb-[100%] my-4 lg:h-full" :slides-per-view=1 :space-between=10 @swiper=onSwiper @slideChange=onSlideChange>
+      <swiper v-if="project.video" class="w-full aspect-video my-4 lg:h-full" :slides-per-view=1 :space-between=10 @swiper=onSwiper @slideChange=onSlideChange>
+
+        <swiper-slide v-for="video in project.images">
+          <video id="video" autoplay muted loop class="w-full h-full rounded-2xl absolute object-cover z-0"  >
+            <source :src="[`/video/${video}`]" type="video/mp4" />
+          </video>
+        </swiper-slide>
+      </swiper>
+
+      <swiper v-else-if="project.images.length === 1" class="w-full aspect-square my-4 lg:h-full" :slides-per-view=1 :space-between=10 @swiper=onSwiper @slideChange=onSlideChange>
 
         <swiper-slide v-for="img in project.images">
           <div class="w-full rounded-3xl my-4 pb-[100%] lg:h-full bg-center bg-cover" :style="[`background-image: url('/img/portfolio/${img}')`]"></div>
@@ -27,7 +36,7 @@
 
 
     </div>
-    <div class="w-full lg:w-1/2 px-8 lg:pt-8">
+    <div class="w-full lg:w-1/2 px-8 lg:pt-8 justify-center flex flex-col">
 
       <div class="my-4 flex flex-col">
         <h2 class="text-sm text-amber-300">Description</h2>
@@ -183,13 +192,86 @@ const portfolioItemData = {
     role: "Logo design to capture what the brand is all about.",
     timeline: "July 2022",
     images: ["Crystal-Stitches.png", "crystal-stitches (6).png", "crystal-stitches (2).png", "crystal-stitches (3).png",  "crystal-stitches (4).png", "crystal-stitches (1).png" ],
-    stack: ["Adobe Illustrator"],
+    stack: ["Adobe Illustrator", "Photoshop"],
+    link: null
+  },
+  kik: {
+    name: "Kik Logo Animation",
+    company: "Personal Project",
+    description: "Kik is a social media messaging app.",
+    product: "Logo Animation",
+    role: "I created a simple but catchy logo Animation to showcase what Kik as a brand is about.",
+    timeline: "August 30th 2021",
+    images: ["kik logo animation.mp4"],
+    video: true,
+    stack: ["Adobe After Effects"],
+    link: null
+  },
+  upskill: {
+    name: "Upskill Logo Animation",
+    company: "Upskill",
+    description: "Upskill is a community of tech entusiasts based in Obafemi Awolowo University (OAU), Nigeria.",
+    product: "Logo Animation",
+    role: "I created a simple but catchy logo Animation for Upskill.",
+    timeline: "March 2022",
+    images: ["upskill-new.mp4"],
+    video: true,
+    stack: ["Adobe After Effects"],
+    link: null
+  },
+  ["aprihive-logo-animation"]: {
+    name: "Aprihive Logo Animation",
+    company: "Aprihive",
+    description: "Aprihive is an android app made to allow users connect with other sellers, engage with customers and close more sales from the app.",
+    product: "Logo Animation",
+    role: "I created a simple but catchy logo Animation to illustrate the tag lines of the brand.",
+    timeline: "November 2021",
+    images: ["aprihive logo animation.mp4"],
+    video: true,
+    stack: ["Adobe After Effects"],
+    link: null
+  },
+  ["target-logo-animation"]: {
+    name: "Target Logo Animation",
+    company: "Personal Project",
+    description: "Target is top tier retail company based in the US",
+    product: "Logo Animation",
+    role: "I created a catchy logo animation. The idea was to get as creative as I could with the logo.",
+    timeline: "October 2021",
+    images: ["target logo animation.mp4"],
+    video: true,
+    stack: ["Adobe After Effects", "Blender"],
+    link: null
+  },
+  ["ewc-logo-animation"]: {
+    name: "Edgewood College Logo Animation",
+    company: "Edgewood College",
+    description: "Edgewood College is a sixth form college located in Lekki, Nigeria.",
+    product: "Logo Animation",
+    role: "I worked on the logo animation",
+    timeline: "May 2022",
+    images: ["Edgewood-logo-animation.mp4"],
+    video: true,
+    stack: ["Adobe After Effects"],
+    link: null
+  },
+  ["ngd-logo-animation"]: {
+    name: "NGD Logo Animation",
+    company: "Personal Project",
+    description: "Naija Graphics Designers, Shortened and better known as NGD is a Facebook community of designers based in Nigeria.",
+    product: "Logo Animation",
+    role: "I created a simple but catchy logo Animation to showcase briefly what NGD is made up of",
+    timeline: "August 30th 2021",
+    images: ["ngd logo intro animation.mp4"],
+    video: true,
+    stack: ["Adobe After Effects"],
     link: null
   },
 
+
 }
 
-let project = portfolioItemData[route.params.name]
+let project = portfolioItemData[route.params.name.toLowerCase()]
 
 
 

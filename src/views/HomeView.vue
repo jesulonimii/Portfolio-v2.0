@@ -22,7 +22,7 @@
             <h1 class="font-ubuntu font-medium text-3xl lg:text-5xl ">Hi, I'm William</h1>
             <h2 class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
             <p class="my-4 text-gray-300">
-              Founder Aprihive, Experienced developer and designer, providing solutions since 2019.
+              Founder Aprihive, Experienced developer and designer, providing solutions since 2020.
             </p>
             <div class="my-8">
               <Button name="Contact Me!" href="/mail" color="bg-amber-300" textColor="text-gray-800" class="my-8"/>
@@ -78,7 +78,7 @@
             I am currently a 200Level student of Obafemi Awolowo University studying for a BSc. in Computer Science and
             Engineering.
             <br><br>
-            I am a full stack web developer and designer with 3+ years of experience equipped with knowledge of various
+            I am a full stack web developer and designer with 3 years of experience in tech and design, equipped with knowledge of various
             technologies to solve problems by building efficient solutions ranging from Web/Mobile Apps to APIs.
             <br><br>
             I love technology, animations, football, movies and Manchester United. <b class="text-red-500">❤</b>
@@ -145,7 +145,7 @@
       <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">Projects</h2>
       <p class="text-gray-400 mt-2">See some of my previous work!</p>
 
-      <div class="w-full my-12 lg:px-16 flex flex-col md:flex-row">
+      <div class="w-full my-12 px-10 lg:px-16 flex flex-col md:grid md:grid-cols-2 md:grid-flow-row md:gap-4 lg:flex lg:flex-row md:justify-items-center justify-center items-center">
 
 
         <ProjectItem title="Trin App" stack-used="Java + PHP + MySql" link="portfolio/trin"
@@ -153,26 +153,25 @@
                      description="Android App developed for the Team Revival in Nigeria (TRIN) to keep members of the community up to date with latest news, articles from the community."
                      type="Mobile App"/>
 
-
-        <ProjectItem title="Camor" stack-used="Illustrator" link="portfolio/camor"
-                     img-src="camor.png"
-                     description="A logo design for Camor. An imaginary charity foundation. Camor means Love"
+        <ProjectItem title="Crystal Stitches" stack-used="Illustrator" link="/portfolio/crystal-stitches"
+                     img-src="crystal-stitches.png"
+                     description="A logo design for Crytal Stitches, A fashion design brand."
                      type="Logo Design"/>
 
-
-        <ProjectItem title="Kik" stack-used="Adobe After Effects" link=""
+        <ProjectItem title="Kik" stack-used="Adobe After Effects" link="portfolio/kik"
                      img-src="kik logo animation.mp4"
                      description="Logo Animation for Kik. A social media messaging app. (Not Contracted)"
                      type="Logo Animation" :video="true" />
 
-
-
-
+        <ProjectItem class="lg:hidden" title="Aprihive App" stack-used="Java + Kotlin + NodeJs + Firebase" link="/portfolio/aprihive"
+                     img-src="aprihive.jfif"
+                     description="An android app made to allow users connect with other sellers, engage with customers and close more sales from the app."
+                     type="Mobile App"/>
 
 
       </div>
 
-      <Button name="View Full Portfolio" href="/portfolio" custom-classes="text-gray-800"/>
+      <Button name="View More" href="/portfolio" custom-classes="text-gray-800"/>
 
 
     </div>
