@@ -24,7 +24,7 @@
     </div>
 
     <div class="w-full aspect-square rounded-3xl relative flex overflow-hidden z-0">
-      <video id="video" muted loop class="w-full h-full absolute object-cover z-0"  >
+      <video id="video" muted loop class="w-full h-full absolute object-cover z-0" webkit-playsinline playsinline >
         <source :src="[`/video/${imgSrc}`]" type="video/mp4" />
       </video>
     </div>
