@@ -15,7 +15,7 @@
       <swiper v-if="project.video" class="w-full aspect-video my-4 lg:h-full" :slides-per-view=1 :space-between=10 @swiper=onSwiper @slideChange=onSlideChange>
 
         <swiper-slide v-for="video in project.images">
-          <video id="video" autoplay muted loop class="w-full h-full rounded-2xl absolute object-cover z-0"  >
+          <video id="video" autoplay controls muted controlsList="nodownload" loop class="w-full h-full rounded-2xl absolute object-cover z-0"  >
             <source :src="[`/video/${video}`]" type="video/mp4" />
           </video>
         </swiper-slide>
