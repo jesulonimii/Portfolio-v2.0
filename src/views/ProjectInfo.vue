@@ -275,6 +275,19 @@ const portfolioItemData = {
     stack: ["Adobe After Effects"],
     link: null
   },
+  ["all-shop"]: {
+    name: "All Shop",
+    company: "All Shop",
+    description: "All Shop is a multivendor e-commerce platform.",
+    product: "Video Animation",
+    role: "I created a simple video animation to advertise the All Shop mobile App.",
+    timeline: "June 2022",
+    images: ["all-shop-ad.mp4"],
+    video: true,
+    sound: true,
+    stack: ["Adobe After Effects"],
+    link: null
+  },
 
 
 }

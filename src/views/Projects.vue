@@ -44,10 +44,12 @@
                      description="A logo design for Crytal Stitches, A fashion design brand."
                      type="Logo Design"/>
 
+<!--
         <ProjectItem class="lg:w-full" title="House Of Jemima" stack-used="Html + Css + Bootstrap" link="/portfolio/hoj"
                      img-src="hoj.png"
                      description="Website design for House of Jemima. A beauty store located in Lagos, Nigeria."
                      type="Website Development"/>
+-->
 
         <ProjectItem class="lg:w-full" title="Themelite" stack-used="Java" link="/portfolio/themelite"
                      img-src="themelite.png"
@@ -93,6 +95,11 @@
                      img-src="ngd logo intro animation.mp4"
                      description="Logo Animation for Naija Graphics Designers (NGD). A community of designers based in Nigeria."
                      type="Logo Animation" :video="true"/>
+
+        <ProjectItem class="lg:w-full" title="All Shop" stack-used="Adobe After Effects" link="/portfolio/all-shop"
+                     img-src="All-shop-ad.mp4"
+                     description="Video Animation for All Shop. A multivendor e-commerce platform."
+                     type="Video Animation" :video="true"/>
 
 
 
