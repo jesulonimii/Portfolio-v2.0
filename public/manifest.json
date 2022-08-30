@@ -1,0 +1,24 @@
+{
+  "background_color": "#ffffff",
+  "description": "William Jesulonimii Abodunrin is a creative designer and full stack developer, founder and CEO of Aprihive, based in Nigeria. Building solutions since 2021!",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Jèsúlonimii | Fullstack Developer & Designer",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Jèsúlonimii | Fullstack Developer & Designer",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.ico"
+    },
+    {
+      "src": "images/undefined.png"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ]
+}
