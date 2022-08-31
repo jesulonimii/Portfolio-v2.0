@@ -294,7 +294,7 @@ const portfolioItemData = {
 
 let project = portfolioItemData[route.params.name.toLowerCase()]
 
-
+playVideo()
 
 
 // Import Swiper Vue.js components
@@ -332,6 +332,18 @@ function toggleMute() {
   }
 
 
+}
+
+function playVideo(){
+
+  const vid = document.getElementById("video")
+
+  try {
+    vid.play()
+  }
+  catch (e) {
+    
+  }
 }
 
 
