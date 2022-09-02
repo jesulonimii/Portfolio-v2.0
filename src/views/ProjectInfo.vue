@@ -109,7 +109,7 @@ const portfolioItemData = {
     stack: ["Java", "PHP", "Mysql"],
     link: {to:"github", url: "https://github.com/jesulonimii/BYG-App-Source-Code"}
   },
-  linkQr: {
+  ["link-qr"]: {
     name: "Link-QR App",
     company: "Personal Project",
     description: "Link-Qr is an android application for creating QR codes, scanning Qr codes and barcodes in real time.",

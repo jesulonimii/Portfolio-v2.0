@@ -9,7 +9,7 @@
 
       <div class="w-full my-12 px-8 md:px-8 lg:px-16 flex flex-col md:grid m-auto md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-8">
 
-        <ProjectItem class="lg:w-full" title="Link Qr" stack-used="Java + PHP" link="/portfolio/linkQr"
+        <ProjectItem class="lg:w-full" title="Link Qr" stack-used="Java + PHP" link="/portfolio/link-qr"
                      img-src="link-qr-2.png"
                      description="Android App for generating QR codes, also for scanning both Qr codes and Barcodes."
                      type="Mobile App"/>
