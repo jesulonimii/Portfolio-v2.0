@@ -5,3 +5,8 @@ Disallow:
 User-agent: *
 Disallow:
 Disallow: /cgi-bin/
+Disallow: /github
+Disallow: /mail
+Disallow: /twitter
+
+

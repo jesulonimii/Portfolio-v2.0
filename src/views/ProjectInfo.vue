@@ -38,7 +38,7 @@
 
 
     </div>
-    <div class="w-full lg:w-1/2 px-8 lg:pt-8 justify-center flex flex-col">
+    <div class="w-full lg:w-1/2 px-8 lg:pt-8 my-12 justify-center flex flex-col">
 
       <div class="my-4 flex flex-col">
         <h2 class="text-sm text-amber-300">Description</h2>
