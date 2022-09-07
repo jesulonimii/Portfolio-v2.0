@@ -18,7 +18,7 @@
         <div class="w-full lg:w-2/5 flex flex-col justify-center h-full text-white">
 
           <div class="lg:max-w-[500px] mx-8 lg:mx-0  h-fit">
-            <h1 class="hidden">Founder Aprihive, Experienced developer and designer, providing solutions since 2019.</h1>
+            <h1 class="hidden">Founder Aprihive, Experienced developer and designer, providing solutions since 2020.</h1>
             <h1 class="font-ubuntu font-medium text-3xl lg:text-5xl ">Hi, I'm William</h1>
             <h2 class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
             <p class="my-4 text-gray-300">
@@ -36,7 +36,61 @@
 
         </div>
 
-        <div class="hidden lg:block lg:w-3/5  my-8 lg:my-0 pr-56 md:px-24 lg:mr-12">
+        <div class="hidden lg:block lg:w-3/5  my-8 lg:my-0 pr-56 md:px-24 lg:mr-12 relative">
+
+
+          <svg class="absolute hidden lg:block -top-28 left-0 opacity-20" width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_627_15282" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="129" height="129">
+              <circle cx="64.5" cy="64.5" r="63.6103" fill="#C4C4C4" stroke="#54b4f8" stroke-width="1.77931"/>
+            </mask>
+            <g mask="url(#mask0_627_15282)">
+              <path d="M-37.4844 27.0501C-37.4844 27.0501 -7.44941 21.4863 0.299994 2.01352C7.71125 -16.6533 38.2404 -21.6709 38.2404 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 36.4093C-37.4844 36.4093 -0.636166 29.9878 8.85543 6.48526C17.905 -15.9514 55.3252 -21.6709 55.3252 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 45.7948C-37.4844 45.7948 6.15098 38.4893 17.3849 11.009C28.0987 -15.2753 72.4102 -21.6709 72.4102 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 55.1542C-37.4844 55.1542 12.9641 46.9908 25.9403 15.4808C38.2924 -14.5733 89.4951 -21.6709 89.4951 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 64.5136C-37.4844 64.5136 19.7773 55.4923 34.4958 19.9784C48.486 -13.8714 106.554 -21.6709 106.554 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 73.899C-37.4844 73.899 26.5644 64.0196 43.0252 24.476C58.7058 -13.1955 123.639 -21.6709 123.639 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 83.2584C-37.4844 83.2584 33.3776 72.495 51.5807 28.9739C68.8996 -12.4935 140.724 -21.6709 140.724 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 92.6178C-37.4844 92.6178 40.1908 80.9965 60.11 33.4456C79.0932 -11.7916 157.809 -21.6709 157.809 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 102.003C-37.4844 102.003 46.9778 89.5241 68.6655 37.9692C89.2871 -11.1157 174.868 -21.6709 174.868 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 111.362C-37.4844 111.362 53.7911 98.0256 77.195 42.467C99.4807 -10.4137 191.952 -21.6709 191.952 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 120.747C-37.4844 120.747 60.6041 106.527 85.7505 46.9647C109.674 -9.71177 209.037 -21.6709 209.037 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 130.108C-37.4844 130.108 67.3913 115.029 94.2799 51.4625C119.868 -9.0357 226.122 -21.6709 226.122 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 139.466C-37.4844 139.466 74.2044 123.53 102.835 55.9341C130.062 -8.33373 243.206 -21.6709 243.206 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 148.851C-37.4844 148.851 81.0177 132.032 111.391 60.4578C140.256 -7.63176 260.266 -21.6709 260.266 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 158.212C-37.4844 158.212 87.8047 140.533 119.92 64.9296C150.449 -6.95589 277.351 -21.6709 277.351 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 167.572C-37.4844 167.572 94.618 149.034 128.476 69.4272C160.643 -6.25392 294.436 -21.6709 294.436 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 176.957C-37.4844 176.957 101.431 157.561 137.005 73.9251C170.837 -5.55195 311.52 -21.6709 311.52 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 186.316C-37.4844 186.316 108.218 166.037 145.56 78.4227C181.031 -4.87609 328.58 -21.6709 328.58 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+            </g>
+          </svg>
+
+          <svg class="absolute hidden lg:block -bottom-28 right-0 opacity-20" width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_627_15282" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="129" height="129">
+              <circle cx="64.5" cy="64.5" r="63.6103" fill="#C4C4C4" stroke="#54b4f8" stroke-width="1.77931"/>
+            </mask>
+            <g mask="url(#mask0_627_15282)">
+              <path d="M-37.4844 27.0501C-37.4844 27.0501 -7.44941 21.4863 0.299994 2.01352C7.71125 -16.6533 38.2404 -21.6709 38.2404 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 36.4093C-37.4844 36.4093 -0.636166 29.9878 8.85543 6.48526C17.905 -15.9514 55.3252 -21.6709 55.3252 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 45.7948C-37.4844 45.7948 6.15098 38.4893 17.3849 11.009C28.0987 -15.2753 72.4102 -21.6709 72.4102 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 55.1542C-37.4844 55.1542 12.9641 46.9908 25.9403 15.4808C38.2924 -14.5733 89.4951 -21.6709 89.4951 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 64.5136C-37.4844 64.5136 19.7773 55.4923 34.4958 19.9784C48.486 -13.8714 106.554 -21.6709 106.554 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 73.899C-37.4844 73.899 26.5644 64.0196 43.0252 24.476C58.7058 -13.1955 123.639 -21.6709 123.639 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 83.2584C-37.4844 83.2584 33.3776 72.495 51.5807 28.9739C68.8996 -12.4935 140.724 -21.6709 140.724 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 92.6178C-37.4844 92.6178 40.1908 80.9965 60.11 33.4456C79.0932 -11.7916 157.809 -21.6709 157.809 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 102.003C-37.4844 102.003 46.9778 89.5241 68.6655 37.9692C89.2871 -11.1157 174.868 -21.6709 174.868 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 111.362C-37.4844 111.362 53.7911 98.0256 77.195 42.467C99.4807 -10.4137 191.952 -21.6709 191.952 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 120.747C-37.4844 120.747 60.6041 106.527 85.7505 46.9647C109.674 -9.71177 209.037 -21.6709 209.037 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 130.108C-37.4844 130.108 67.3913 115.029 94.2799 51.4625C119.868 -9.0357 226.122 -21.6709 226.122 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 139.466C-37.4844 139.466 74.2044 123.53 102.835 55.9341C130.062 -8.33373 243.206 -21.6709 243.206 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 148.851C-37.4844 148.851 81.0177 132.032 111.391 60.4578C140.256 -7.63176 260.266 -21.6709 260.266 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 158.212C-37.4844 158.212 87.8047 140.533 119.92 64.9296C150.449 -6.95589 277.351 -21.6709 277.351 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 167.572C-37.4844 167.572 94.618 149.034 128.476 69.4272C160.643 -6.25392 294.436 -21.6709 294.436 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 176.957C-37.4844 176.957 101.431 157.561 137.005 73.9251C170.837 -5.55195 311.52 -21.6709 311.52 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 186.316C-37.4844 186.316 108.218 166.037 145.56 78.4227C181.031 -4.87609 328.58 -21.6709 328.58 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+            </g>
+          </svg>
+
 
           <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0" mask-type="alpha">
@@ -70,8 +124,34 @@
 
       <div class="flex flex-col lg:flex-row h-fit w-full mt-12 px-10 py-8">
 
-        <div class="h-full w-full px-0 lg:px-20">
+        <div class="h-full w-full px-0 lg:px-20 relative">
           <h1 class="hidden">Who is Abodunrin William Jesulonimi?</h1>
+          <svg class="absolute hidden lg:block left-0 -top-24 opacity-20" width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_627_15282" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="129" height="129">
+              <circle cx="64.5" cy="64.5" r="63.6103" fill="#C4C4C4" stroke="#54b4f8" stroke-width="1.77931"/>
+            </mask>
+            <g mask="url(#mask0_627_15282)">
+              <path d="M-37.4844 27.0501C-37.4844 27.0501 -7.44941 21.4863 0.299994 2.01352C7.71125 -16.6533 38.2404 -21.6709 38.2404 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 36.4093C-37.4844 36.4093 -0.636166 29.9878 8.85543 6.48526C17.905 -15.9514 55.3252 -21.6709 55.3252 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 45.7948C-37.4844 45.7948 6.15098 38.4893 17.3849 11.009C28.0987 -15.2753 72.4102 -21.6709 72.4102 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 55.1542C-37.4844 55.1542 12.9641 46.9908 25.9403 15.4808C38.2924 -14.5733 89.4951 -21.6709 89.4951 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 64.5136C-37.4844 64.5136 19.7773 55.4923 34.4958 19.9784C48.486 -13.8714 106.554 -21.6709 106.554 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 73.899C-37.4844 73.899 26.5644 64.0196 43.0252 24.476C58.7058 -13.1955 123.639 -21.6709 123.639 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 83.2584C-37.4844 83.2584 33.3776 72.495 51.5807 28.9739C68.8996 -12.4935 140.724 -21.6709 140.724 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 92.6178C-37.4844 92.6178 40.1908 80.9965 60.11 33.4456C79.0932 -11.7916 157.809 -21.6709 157.809 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 102.003C-37.4844 102.003 46.9778 89.5241 68.6655 37.9692C89.2871 -11.1157 174.868 -21.6709 174.868 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 111.362C-37.4844 111.362 53.7911 98.0256 77.195 42.467C99.4807 -10.4137 191.952 -21.6709 191.952 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 120.747C-37.4844 120.747 60.6041 106.527 85.7505 46.9647C109.674 -9.71177 209.037 -21.6709 209.037 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 130.108C-37.4844 130.108 67.3913 115.029 94.2799 51.4625C119.868 -9.0357 226.122 -21.6709 226.122 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 139.466C-37.4844 139.466 74.2044 123.53 102.835 55.9341C130.062 -8.33373 243.206 -21.6709 243.206 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 148.851C-37.4844 148.851 81.0177 132.032 111.391 60.4578C140.256 -7.63176 260.266 -21.6709 260.266 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 158.212C-37.4844 158.212 87.8047 140.533 119.92 64.9296C150.449 -6.95589 277.351 -21.6709 277.351 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 167.572C-37.4844 167.572 94.618 149.034 128.476 69.4272C160.643 -6.25392 294.436 -21.6709 294.436 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 176.957C-37.4844 176.957 101.431 157.561 137.005 73.9251C170.837 -5.55195 311.52 -21.6709 311.52 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 186.316C-37.4844 186.316 108.218 166.037 145.56 78.4227C181.031 -4.87609 328.58 -21.6709 328.58 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+            </g>
+          </svg>
+
           <p>
             I am William Jesulonimi Abodunrin, a developer based in Lagos, Nigeria.
             <br><br>
@@ -85,7 +165,34 @@
           </p>
         </div>
 
-        <div class="h-full my-12 lg:my-0 w-full flex flex-col justify-center items-center">
+        <div class="h-full my-12 lg:my-0 w-full flex flex-col justify-center items-center relative">
+
+          <svg class="absolute  right-0 opacity-20 hidden lg:block" width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_627_15282" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="129" height="129">
+              <circle cx="64.5" cy="64.5" r="63.6103" fill="#C4C4C4" stroke="#54b4f8" stroke-width="1.77931"/>
+            </mask>
+            <g mask="url(#mask0_627_15282)">
+              <path d="M-37.4844 27.0501C-37.4844 27.0501 -7.44941 21.4863 0.299994 2.01352C7.71125 -16.6533 38.2404 -21.6709 38.2404 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 36.4093C-37.4844 36.4093 -0.636166 29.9878 8.85543 6.48526C17.905 -15.9514 55.3252 -21.6709 55.3252 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 45.7948C-37.4844 45.7948 6.15098 38.4893 17.3849 11.009C28.0987 -15.2753 72.4102 -21.6709 72.4102 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 55.1542C-37.4844 55.1542 12.9641 46.9908 25.9403 15.4808C38.2924 -14.5733 89.4951 -21.6709 89.4951 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 64.5136C-37.4844 64.5136 19.7773 55.4923 34.4958 19.9784C48.486 -13.8714 106.554 -21.6709 106.554 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 73.899C-37.4844 73.899 26.5644 64.0196 43.0252 24.476C58.7058 -13.1955 123.639 -21.6709 123.639 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 83.2584C-37.4844 83.2584 33.3776 72.495 51.5807 28.9739C68.8996 -12.4935 140.724 -21.6709 140.724 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 92.6178C-37.4844 92.6178 40.1908 80.9965 60.11 33.4456C79.0932 -11.7916 157.809 -21.6709 157.809 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 102.003C-37.4844 102.003 46.9778 89.5241 68.6655 37.9692C89.2871 -11.1157 174.868 -21.6709 174.868 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 111.362C-37.4844 111.362 53.7911 98.0256 77.195 42.467C99.4807 -10.4137 191.952 -21.6709 191.952 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 120.747C-37.4844 120.747 60.6041 106.527 85.7505 46.9647C109.674 -9.71177 209.037 -21.6709 209.037 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 130.108C-37.4844 130.108 67.3913 115.029 94.2799 51.4625C119.868 -9.0357 226.122 -21.6709 226.122 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 139.466C-37.4844 139.466 74.2044 123.53 102.835 55.9341C130.062 -8.33373 243.206 -21.6709 243.206 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 148.851C-37.4844 148.851 81.0177 132.032 111.391 60.4578C140.256 -7.63176 260.266 -21.6709 260.266 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 158.212C-37.4844 158.212 87.8047 140.533 119.92 64.9296C150.449 -6.95589 277.351 -21.6709 277.351 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 167.572C-37.4844 167.572 94.618 149.034 128.476 69.4272C160.643 -6.25392 294.436 -21.6709 294.436 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 176.957C-37.4844 176.957 101.431 157.561 137.005 73.9251C170.837 -5.55195 311.52 -21.6709 311.52 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M-37.4844 186.316C-37.4844 186.316 108.218 166.037 145.56 78.4227C181.031 -4.87609 328.58 -21.6709 328.58 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
+            </g>
+          </svg>
+
 
           <!-- stacks with language used -->
           <div class="flex justify-center items-center h-full w-full my-8 lg:my-12 w-fit relative">
