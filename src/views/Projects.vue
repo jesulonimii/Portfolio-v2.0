@@ -53,7 +53,7 @@
 
         <ProjectItem class="lg:w-full" title="Themelite" stack-used="Java" link="/portfolio/themelite"
                      img-src="themelite.png"
-                     description="Android Library for quick implementation of dark theme in natiive android apps."
+                     description="Android Library for quick implementation of dark theme in native android apps."
                      type="Android Library"/>
 
         <ProjectItem class="lg:w-full" title="BYG App" stack-used="Java + PHP + MySql" link="/portfolio/byg"
