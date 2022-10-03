@@ -195,7 +195,7 @@ const portfolioItemData = {
     timeline: "September 2022",
     images: ["chathub.jpg"],
     stack: ["Vue",  "Socket.io", "Tailwind CSS", "NodeJs", "ExpressJs"],
-    link: {to:"globe", url: "https://chathub-jw.vercel.app/chat"}
+    link: {to:"globe", url: "https://chathub-jw.vercel.app/"}
   },
   dutyist: {
     name: "Dutyist",
