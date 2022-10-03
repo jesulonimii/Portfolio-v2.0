@@ -69,7 +69,7 @@
       </div>
 
       <div class="flex w-full h-6 mt-8 mb-36 lg:mb-0">
-        <IconButton v-if="project.link" :href="project.link.url" :icon="project.link.to" name="Check Project" text-color="text-gray-800" />
+        <IconButton v-if="project.link" :href="project.link.url" :icon="project.link.to" name="Check Project" text-color="text-gray-800" :external=true />
       </div>
       
     </div>
@@ -174,6 +174,28 @@ const portfolioItemData = {
     images: ["hoj.png"],
     stack: ["Bootstrap",  "HTML", "CSS", "Javascript"],
     link: {to:"github", url: "https://github.com/jesulonimii/Themelite"}
+  },
+  cineflix: {
+    name: "CineFlix",
+    company: "Personal Project",
+    description: "CineFlix is a movie streaming web app.",
+    product: "Frontend Development",
+    role: "I developed the frontend of the web app.",
+    timeline: "September 2022",
+    images: ["cineflix.png"],
+    stack: ["Vue",  "Vite", "Tailwind CSS"],
+    link: {to:"globe", url: "https://cine-flix.vercel.app/"}
+  },
+  chathub: {
+    name: "Chathub",
+    company: "Personal Project",
+    description: "Chathub is a realtime chat app. It allows users to chat with other users  anonymously in realtime.",
+    product: "Frontend Development and Backend Development",
+    role: "I developed the both the frontend and backend server of the web app.",
+    timeline: "September 2022",
+    images: ["chathub.jpg"],
+    stack: ["Vue",  "Socket.io", "Tailwind CSS", "NodeJs", "ExpressJs"],
+    link: {to:"globe", url: "https://chathub-jw.vercel.app/chat"}
   },
   dutyist: {
     name: "Dutyist",
@@ -283,6 +305,19 @@ const portfolioItemData = {
     role: "I created a simple video animation to advertise the All Shop mobile App.",
     timeline: "June 2022",
     images: ["all-shop-ad.mp4"],
+    video: true,
+    sound: true,
+    stack: ["Adobe After Effects"],
+    link: null
+  },
+  ["safedrop"]: {
+    name: "SafeDrop",
+    company: "SafeDrop",
+    description: "SafeDrop is a Nigerian based platform offering services that include, ride-hailing and taxi services as well as Logistics services",
+    product: "Video Animation",
+    role: "I created a simple video animation to advertise the SafeDrop mobile App.",
+    timeline: "September 2022",
+    images: ["safedrop.mp4"],
     video: true,
     sound: true,
     stack: ["Adobe After Effects"],

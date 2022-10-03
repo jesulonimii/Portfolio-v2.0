@@ -66,6 +66,16 @@
                      description="Website for Edgewood College, A sixth form college located in Lekki, Nigeria."
                      type="Website Development"/>-->
 
+        <ProjectItem class="lg:w-full" title="CineFlix" stack-used="Vue + Vite + Tailwind CSS" link="/portfolio/cineflix"
+                     img-src="cineflix.png"
+                     description="Frontend web app design for a movie streaming app."
+                     type="Web App"/>
+
+        <ProjectItem class="lg:w-full" title="ChatHub" stack-used="Vue + Tailwind + Socket.io + NodeJS" link="/portfolio/chathub"
+                     img-src="chathub.jpg"
+                     description="Chathub is a realtime chat app. It allows users to chat with other users  anonymously in realtime."
+                     type="Web App"/>
+
         <ProjectItem class="lg:w-full" title="Upskill" stack-used="Adobe After Effects" link="/portfolio/upskill"
                      img-src="upskill-new.mp4"
                      description="Logo Animation for Upskill. A community of tech entusiasts based in Obafemi Awolowo University (OAU), Nigeria."
@@ -101,7 +111,10 @@
                      description="Video Animation for All Shop. A multivendor e-commerce platform."
                      type="Video Animation" :video="true"/>
 
-
+        <ProjectItem class="lg:w-full" title="SafeDrop" stack-used="Adobe After Effects" link="/portfolio/safedrop"
+                     img-src="safedrop.mp4"
+                     description="Video Animation for SafeDrop. A Taxi and Logistics services company."
+                     type="Video Animation" :video="true"/>
 
 
       </div>

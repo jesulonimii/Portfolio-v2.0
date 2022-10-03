@@ -1,7 +1,12 @@
 <template>
 
 
-  <a :href=href :class="[color, textColor, 'px-2 py-6 rounded-lg flex items-center justify-center', customClasses]">
+  <a v-if="external" target="_blank" :href=href :class="[color, textColor, 'px-2 py-6 rounded-lg flex items-center justify-center', customClasses]" >
+    <i :class="['fa text-2xl', `fa-${icon}`]"></i>
+    <p class="mx-2 uppercase text-sm font-bold">{{name}} </p>
+  </a>
+
+  <a v-else :href=href :class="[color, textColor, 'px-2 py-6 rounded-lg flex items-center justify-center', customClasses]" v-if="external">
     <i :class="['fa text-2xl', `fa-${icon}`]"></i>
     <p class="mx-2 uppercase text-sm font-bold">{{name}} </p>
   </a>
