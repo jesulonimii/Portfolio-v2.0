@@ -25,6 +25,10 @@ const router = createRouter({
           {
             property: 'og:description',
             content: 'Jèsúlonimii™ | Fullstack Developer & Designer'
+          },
+          {
+            property: 'og:image',
+            content: 'https://i.ibb.co/dJr1wt7/og-image.png'
           }
         ]
       }
@@ -73,11 +77,15 @@ const router = createRouter({
         metaTags: [
           {
             name: 'description',
-            content: 'William Jesulonimi Abodunrin Portfolio'
+            content: 'Jèsúlonimii™ | Fullstack Developer & Designer'
           },
           {
             property: 'og:description',
-            content: 'William Jesulonimi Abodunrin Portfolio'
+            content: 'Jèsúlonimii™ | Fullstack Developer & Designer'
+          },
+          {
+            property: 'og:image',
+            content: 'https://i.ibb.co/dJr1wt7/og-image.png'
           }
         ]
       }

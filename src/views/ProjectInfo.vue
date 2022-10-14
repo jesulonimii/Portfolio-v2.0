@@ -329,6 +329,8 @@ const portfolioItemData = {
 
 let project = portfolioItemData[route.params.name.toLowerCase()]
 
+document.title = `${project.name} - Jèsúlonimii™ Projects`
+
 playVideo()
 
 
