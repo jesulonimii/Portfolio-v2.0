@@ -1,6 +1,6 @@
 <template>
 
-  <div v-if=video class="lg:mx-2 my-4 w-full  flex md:w-full lg:w-1/3 justify-center relative">
+  <div data-aos="flip-left" data-aos-duration="1500" v-if=video class="lg:mx-2 my-4 w-full  flex md:w-full lg:w-1/3 justify-center relative">
 
     <div id="overlay" class="group w-full aspect-square overflow-hidden bg-cover rounded-3xl absolute z-10 "  >
 
@@ -32,7 +32,7 @@
 
   </div>
 
-  <div v-else class="lg:mx-2 my-4 w-full h-full flex md:w-full lg:w-1/3 justify-center  relative">
+  <div data-aos="flip-left" data-aos-duration="1500" v-else class="lg:mx-2 my-4 w-full h-full flex md:w-full lg:w-1/3 justify-center  relative">
 
     <div id="overlay" class="group w-full aspect-square  overflow-hidden  bg-cover rounded-3xl absolute">
       <div class=" coverlay w-full h-full flex flex-col rounded-md p-6 sm:pt-8 md:pt-2 lg:pt-6 bg-[#374151ba] absolute group-hover:bg-[#1f2937e6]  translate-y-[70%] sm:translate-y-[84.5%] lg:translate-y-[75%] group-hover:translate-y-[0%] transition duration-1000 ease-in-out">

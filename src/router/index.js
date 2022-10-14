@@ -55,7 +55,7 @@ const router = createRouter({
       path: '/contact',
       name: 'Contact',
       component: Redirect,
-      beforeEnter() {location.href = `/#home`}
+      beforeEnter() {location.href = `/#contact`}
     },
     {
       name: 'Twitter',

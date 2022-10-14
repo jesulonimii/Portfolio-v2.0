@@ -8,4 +8,10 @@ const app = createApp(App)
 
 app.use(router)
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init({
+    duration: 1000,
+});
+
 app.mount('#app')

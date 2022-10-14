@@ -122,12 +122,17 @@
 
     </div>
 
+    <SocialWidgets />
+
+
 
   </main>
 </template>
 
 <script setup>
 import ProjectItem from "../components/ProjectBar.vue"
+import SocialWidgets from "../components/SocialWidgets.vue";
+
 </script>
 
 

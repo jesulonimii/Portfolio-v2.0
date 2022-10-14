@@ -1,6 +1,6 @@
 <template>
 
-  <header class="sticky border-b-[1px] lg:border-0 border-gray-900 z-50 top-0 bg-gray-800 max-h-[10vh] h-fit flex justify-between items-center px-6 md:px-20 py-8">
+  <header class="sticky border-b-[1px] bg-[#1f2937d1] lg:border-0 border-gray-900 z-50 top-0 max-h-[10vh] h-fit flex justify-between items-center px-6 md:px-20 py-8 filter backdrop-blur-[4px]">
     <a class="w-fit flex text-white items-center py-1" href="/" >
       <img :src=imageLink class="w-8 max-w-[50px] rounded-full" alt="logo">
       <p class="mx-4  md:text-xl">{{title}}</p>
@@ -12,6 +12,7 @@
       <router-link to="/contact" class="text-white mx-4">Get in Touch</router-link>
     </div>
   </header>
+
 
 </template>
 

@@ -19,13 +19,13 @@
 
           <div class="lg:max-w-[500px] mx-8 lg:mx-0  h-fit">
             <h1 class="hidden">Founder Aprihive, Experienced developer and designer, providing solutions since 2020.</h1>
-            <h1 class="font-ubuntu font-medium text-3xl lg:text-5xl ">Hi, I'm William</h1>
-            <h2 class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
-            <p class="my-4 text-gray-300">
+            <h1 data-aos="fade-up" data-aos-delay="100" class="font-ubuntu font-medium text-3xl lg:text-5xl ">Hi, I'm William</h1>
+            <h2 data-aos="fade-up" data-aos-delay="200" class="my-2 text-amber-300">Fullstack Developer & Designer</h2>
+            <p data-aos="fade-up" data-aos-delay="300" class="my-4 text-gray-300">
               Founder Aprihive, Experienced developer and designer, providing solutions since 2020.
             </p>
-            <div class="my-8">
-              <Button name="Contact Me!" href="/mail" color="bg-amber-300" textColor="text-gray-800" class="my-8"/>
+            <div class="my-8" data-aos="fade-up" data-aos-delay="400">
+              <ButtonOutlined  name="Contact Me!" href="/mail" />
             </div>
           </div>
 
@@ -119,7 +119,7 @@
     <!-- About Section -->
     <div id="about" class="h-full min-h-[60vh] w-full flex flex-col items-center text-white">
 
-      <h2 class="font-ubuntu font-bold text-4xl mt-12 w-fit h-fit">About Me</h2>
+      <h2 class="font-ubuntu font-bold text-4xl mt-24 w-fit h-fit">About Me</h2>
       <p class="text-gray-400 mt-2">Get to know more about me!</p>
 
       <div class="flex flex-col lg:flex-row h-fit w-full mt-12 px-10 py-8">
@@ -151,8 +151,7 @@
               <path d="M-37.4844 186.316C-37.4844 186.316 108.218 166.037 145.56 78.4227C181.031 -4.87609 328.58 -21.6709 328.58 -21.6709" stroke="#f9d16a" stroke-width="2" stroke-miterlimit="10"/>
             </g>
           </svg>
-
-          <p>
+          <p data-aos="fade-up">
             I am William Jesulonimi Abodunrin, a developer based in Lagos, Nigeria.
             <br><br>
             I am currently a 200Level student of Obafemi Awolowo University studying for a BSc. in Computer Science and
@@ -196,7 +195,7 @@
 
           <!-- stacks with language used -->
           <div class="flex justify-center items-center h-full w-full my-8 lg:my-12 w-fit relative">
-            <div class="bg-[#252f3e] w-full drop-shadow-lg h-fit py-12 px-8 z-10 rounded-2xl">
+            <div  class="bg-[#252f3e] w-full drop-shadow-lg h-fit py-12 px-8 z-10 rounded-2xl">
 
               <ListItem class="my-4" content="Android Development" icon-color="#fcd34d"/>
               <ListItem class="my-4" content="Website Development" icon-color="#fcd34d"/>
@@ -204,7 +203,7 @@
               <ListItem class="my-4" content="Logo Animations & Motion Design" icon-color="#fcd34d"/>
 
             </div>
-            <div class="bg-amber-300 w-full drop-shadow-lg absolute h-fit py-12 px-8 rotate-[5deg] rounded-2xl">
+            <div  class="bg-amber-300 w-full drop-shadow-lg absolute h-fit py-12 px-8 rotate-[5deg] rounded-2xl">
               <div class="invisible">
                 <ListItem class="my-4" content="Android Development" icon-color="#fcd34d"/>
                 <ListItem class="my-4" content="Website Development" icon-color="#fcd34d"/>
@@ -214,35 +213,36 @@
             </div>
           </div>
 
-          <!-- Tech Stack -->
-          <div class="flex flex-col mt-12 w-full px-8">
-            <h3 class="font-ubuntu font-bold text-lg w-full flex justify-center capitalize">Tech Stack and Tools 📚</h3>
 
-            <div class="grid grid-cols-8 gap-2 my-4">
-              <TechStackIcon stack="nodejs-icon"/>
-              <TechStackIcon stack="vue"/>
-              <TechStackIcon stack="tailwindcss-icon"/>
-              <TechStackIcon stack="javascript"/>
-              <TechStackIcon stack="mongodb-icon"/>
-              <TechStackIcon stack="kotlin-icon"/>
-              <TechStackIcon stack="firebase"/>
-              <TechStackIcon stack="java"/>
-              <TechStackIcon stack="adobe-after-effects"/>
-              <TechStackIcon stack="adobe-photoshop"/>
-              <TechStackIcon stack="adobe-illustrator"/>
-              <TechStackIcon stack="blender"/>
-              <TechStackIcon stack="mysql"/>
-              <TechStackIcon stack="css-3"/>
-              <TechStackIcon stack="git-icon"/>
-              <TechStackIcon stack="php"/>
-            </div>
-
-          </div>
 
         </div>
 
       </div>
 
+      <!-- Tech Stack -->
+      <div class="flex flex-col mt-12 w-full lg:w-[50%]  px-8">
+        <h3 class="font-ubuntu font-bold text-lg w-full flex justify-center capitalize">Tech Stack and Tools 📚</h3>
+
+        <div class="grid grid-cols-8 gap-2 my-4">
+          <TechStackIcon stack="nodejs-icon"/>
+          <TechStackIcon stack="vue"/>
+          <TechStackIcon stack="tailwindcss-icon"/>
+          <TechStackIcon stack="javascript"/>
+          <TechStackIcon stack="mongodb-icon"/>
+          <TechStackIcon stack="kotlin-icon"/>
+          <TechStackIcon stack="firebase"/>
+          <TechStackIcon stack="java"/>
+          <TechStackIcon stack="adobe-after-effects"/>
+          <TechStackIcon stack="adobe-photoshop"/>
+          <TechStackIcon stack="adobe-illustrator"/>
+          <TechStackIcon stack="blender"/>
+          <TechStackIcon stack="mysql"/>
+          <TechStackIcon stack="css-3"/>
+          <TechStackIcon stack="git-icon"/>
+          <TechStackIcon stack="php"/>
+        </div>
+
+      </div>
 
     </div>
 
@@ -278,22 +278,52 @@
 
       </div>
 
-      <Button name="View More" href="/portfolio" custom-classes="text-gray-800"/>
+      <ButtonOutlined name="See More" href="/portfolio"/>
 
 
     </div>
-    
-    <div class="h-16 my-12"></div>
+
+
+    <!-- Contact -->
+    <div id="contact" class="h-full min-h-[60vh] mt-10 w-full flex flex-col items-center text-white">
+
+      <h2 class="font-ubuntu font-bold text-4xl mt-24 w-fit h-fit">Get In Touch</h2>
+      <p class="text-gray-400 my-8 w-[50%] text-center">
+        Glad you came all the way down, It's time to reach out to me!<br>
+        I do hope that you liked all that you have seen so far and consider me for future jobs, opportunities and collaborations.
+      </p>
+      
+      <ButtonOutlined name="Hire Me" href="/mail" class="my-4"/>
+
+      <div class="flex text-2xl opacity-50 mt-12 w-[50%] items-center justify-center">
+        <a href="/github" target="_blank" class="mx-3"><i class="uil uil-github"></i></a>
+        <a href="https://twitter.com/jesulonimii" target="_blank" class="mx-3"><i class="uil uil-twitter"></i></a>
+        <a href="https://instagram.com/jesulonimii" target="_blank" class="mx-3"><i class="fa fa-instagram"></i></a>
+        <a href="https://wa.me/2348120474003" target="_blank" class="mx-3"><i class="fa fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+
+    <!-- End Notes -->
+    <div class="h-fit mt-[50px] w-full flex flex-col items-center text-white">
+      <p class="text-gray-500 my-8 w-[50%] text-center font-italics">
+      Live. &nbsp;&nbsp; Love. &nbsp;&nbsp; Learn.
+      </p>
+    </div>
+
+    <SocialWidgets/>
 
 
   </main>
 </template>
 
-<script setup>
+<script  setup>
 import Button from '../components/Button.vue'
 import ListItem from "../components/ListItem.vue";
 import TechStackIcon from "../components/TechStackIcon.vue"
 import ProjectItem from "../components/ProjectBar.vue"
+import ButtonOutlined from "../components/ButtonOutlined.vue";
+import SocialWidgets from "../components/SocialWidgets.vue";
 
 
 const videos = document.getElementsByTagName("video");

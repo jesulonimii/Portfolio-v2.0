@@ -21,6 +21,7 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import './assets/css/tailwind.css'
 import NavMenu from './components/NavMenu.vue'
+import SocialWidgets from "./components/SocialWidgets.vue";
 
 </script>
 
