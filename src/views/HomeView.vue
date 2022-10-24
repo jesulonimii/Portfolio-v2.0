@@ -288,7 +288,7 @@
     <div id="contact" class="h-full min-h-[60vh] mt-10 w-full flex flex-col items-center text-white">
 
       <h2 class="font-ubuntu font-bold text-4xl mt-24 w-fit h-fit">Get In Touch</h2>
-      <p class="text-gray-400 my-8 w-[50%] text-center">
+      <p class="text-gray-400 my-8 w-[80%] lg:w-[50%] text-center">
         Glad you came all the way down, It's time to reach out to me!<br>
         I do hope that you liked all that you have seen so far and consider me for future jobs, opportunities and collaborations.
       </p>
@@ -308,11 +308,11 @@
     <div id="playlist" class="h-full min-h-[60vh] mt-10 w-full flex flex-col items-center text-white">
 
       <h2 class="font-ubuntu font-bold text-4xl mt-24 w-fit h-fit">The Music Touch</h2>
-      <p class="text-gray-400 my-8 w-[50%] text-center">
+      <p class="text-gray-400 my-8 w-[80%] lg:w-[50%] text-center">
         Well, I've got great taste in music, you really want to click the play button. <br>
       </p>
 
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4G5YmxAHyhkgAT0PRDYAJS?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" class="w-[90%] lg:w-[50%] mx-8 flex" src="https://open.spotify.com/embed/playlist/4G5YmxAHyhkgAT0PRDYAJS?utm_source=generator" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
     </div>
 
