@@ -160,7 +160,7 @@
             I am a full stack web developer and designer with 3 years of experience in tech and design, equipped with knowledge of various
             technologies to solve problems by building efficient solutions ranging from Web/Mobile Apps to APIs.
             <br><br>
-            I love technology, animations, football, movies and Manchester United. <b class="text-red-500">❤</b>
+            I love technology, animations, football, movies, music and Manchester United. <b class="text-red-500">❤</b>
           </p>
         </div>
 
@@ -301,6 +301,19 @@
         <a href="https://instagram.com/jesulonimii" target="_blank" class="mx-3"><i class="fa fa-instagram"></i></a>
         <a href="https://wa.me/2348120474003" target="_blank" class="mx-3"><i class="fa fa-whatsapp"></i></a>
       </div>
+    </div>
+
+
+    <!-- music -->
+    <div id="playlist" class="h-full min-h-[60vh] mt-10 w-full flex flex-col items-center text-white">
+
+      <h2 class="font-ubuntu font-bold text-4xl mt-24 w-fit h-fit">The Music Touch</h2>
+      <p class="text-gray-400 my-8 w-[50%] text-center">
+        Well, I've got great taste in music, you really want to click the play button. <br>
+      </p>
+
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4G5YmxAHyhkgAT0PRDYAJS?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
     </div>
 
 

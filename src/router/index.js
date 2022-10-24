@@ -109,6 +109,12 @@ const router = createRouter({
       }
     },
     {
+      path: '/playlist',
+      name: 'Playlist',
+      component: Redirect,
+      beforeEnter() {location.href = `/#playlist`}
+    },
+    {
       path: '/:pathMatch(.*)*',
       component: NotFound,
       meta: {
