@@ -34,10 +34,10 @@
                      description="A logo design for Camor. An imaginary charity foundation. Camor means Love"
                      type="Logo Design"/>
 
-<!--        <ProjectItem title="Dutyist" stack-used="Illustrator" link="/portfolio/dutyist"
+       <ProjectItem class="lg:w-full" title="Dutyist" stack-used="Illustrator" link="/portfolio/dutyist"
                      img-src="dutyist-1.png"
                      description="A logo design for Dutyist a productivity app."
-                     type="Logo Design"/>-->
+                     type="Logo Design"/>
 
         <ProjectItem class="lg:w-full" title="Crystal Stitches" stack-used="Illustrator" link="/portfolio/crystal-stitches"
                      img-src="crystal-stitches.png"
@@ -61,10 +61,10 @@
                      description="Android Web App developed in Java for the Beautiful Yet Godly Website."
                      type="Mobile App"/>
 
-<!--        <ProjectItem title="Edgewood College" stack-used="HTML + Tailwind CSS + NodeJs" link="/portfolio/edgewood-website"
+        <ProjectItem class="lg:w-full" title="Edgewood College Website" stack-used="Vue + Tailwind CSS" link="/portfolio/ewc-website"
                      img-src="ewc-2.png"
                      description="Website for Edgewood College, A sixth form college located in Lekki, Nigeria."
-                     type="Website Development"/>-->
+                     type="Website Development"/>
 
         <ProjectItem class="lg:w-full" title="CineFlix" stack-used="Vue + Vite + Tailwind CSS" link="/portfolio/cineflix"
                      img-src="cineflix.png"
@@ -105,6 +105,11 @@
                      img-src="ngd logo intro animation.mp4"
                      description="Logo Animation for Naija Graphics Designers (NGD). A community of designers based in Nigeria."
                      type="Logo Animation" :video="true"/>
+
+        <ProjectItem class="lg:w-full" title="Sophie Data Hub" stack-used="Adobe After Effects" link="/portfolio/sophie-data-hub"
+                     img-src="sophie-data-hub.mp4"
+                     description="Short video ad for a data reselling and bills payment website based in Nigeria."
+                     type="Video Animation" :video="true"/>
 
         <ProjectItem class="lg:w-full" title="All Shop" stack-used="Adobe After Effects" link="/portfolio/all-shop"
                      img-src="All-shop-ad.mp4"

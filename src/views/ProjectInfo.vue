@@ -173,8 +173,20 @@ const portfolioItemData = {
     timeline: "June 2021",
     images: ["hoj.png"],
     stack: ["Bootstrap",  "HTML", "CSS", "Javascript"],
-    link: {to:"github", url: "https://github.com/jesulonimii/Themelite"}
+    link: {to:"github", url: "#"}
   },
+  ["ewc-website"]: {
+    name: "Edgewood Website",
+    company: "Edgewood College",
+    description: "Edgewood College is a sixth form college located in Lekki, Nigeria.",
+    product: "Website",
+    role: "I developed the website to show information about the school.",
+    timeline: "May - August 2022",
+    images: ["ewc-2.png"],
+    stack: ["Vue",  "Tailwind CSS"],
+    link: {to:"web", url: "https://edgewood-college.vercel.app"}
+  },
+
   cineflix: {
     name: "CineFlix",
     company: "Personal Project",
@@ -323,6 +335,20 @@ const portfolioItemData = {
     stack: ["Adobe After Effects"],
     link: null
   },
+  ["sophie-data-hub"]: {
+    name: "Sophie Data Hub",
+    company: "Sophie Data Hub",
+    description: "Sophie Data Hub is a Nigerian based website platform offering bill payment services.",
+    product: "Video Animation",
+    role: "I created a simple video animation to advertise the Sophie Data Hub website.",
+    timeline: "March 2022",
+    images: ["sophie-data-hub.mp4"],
+    video: true,
+    sound: true,
+    stack: ["Adobe After Effects"],
+    link: null
+  },
+  
 
 
 }
