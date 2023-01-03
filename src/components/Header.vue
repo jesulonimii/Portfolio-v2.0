@@ -16,7 +16,7 @@
     </div>
 
     <div class="w-fit">
-      <ButtonOutlined href="/assets/[resume]-Jesulonimii.pdf" :external=true name="Résumé" class="flex w-fit text-sm" />
+      <ButtonOutlined href="/resume" :external=true name="Résumé" class="flex w-fit text-sm" />
     </div>
 
 
@@ -39,3 +39,4 @@ defineProps({
   }
 })
 </script>
+

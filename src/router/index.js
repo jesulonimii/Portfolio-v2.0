@@ -38,6 +38,15 @@ const router = createRouter({
       redirect: '/'
     },
     {
+      path: '/cv',
+      beforeEnter() {location.href = '/assets/[resume]-Jesulonimii.pdf'}
+    },
+    {
+      path: '/resume',
+      beforeEnter() {location.href = '/assets/[resume]-Jesulonimii.pdf'}
+
+    },
+    {
       name: 'Github',
       path: '/github',
       component: Redirect,
